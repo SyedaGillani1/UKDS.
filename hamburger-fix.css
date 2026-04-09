@@ -1,0 +1,311 @@
+/* ============================================================
+   hamburger-fix.css  —  UK Defence Services
+   PURPOSE : Fix hamburger menu, blank-space bug, and style
+             the mobile nav with hover effects + services accordion.
+   USAGE   : Add AFTER style.css in every page <head>
+             <link rel="stylesheet" href="style.css" />
+             <link rel="stylesheet" href="hamburger-fix.css" />
+   DO NOT  : Edit style.css — this file overrides only what's broken.
+   ============================================================ */
+
+
+/* ============================================================
+   01. SITE HEADER
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  overflow: visible;
+}
+
+
+/* ============================================================
+   02. NAV WRAP
+   Anchors hamburger button inside the header bar.
+   ============================================================ */
+.nav-wrap {
+  position: relative;
+  min-height: 68px;
+}
+
+
+/* ============================================================
+   03. HAMBURGER BUTTON
+   Hidden on desktop, shown on mobile via media query below.
+   ============================================================ */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+  background: rgba(212, 168, 67, 0.08);
+  border: 1.5px solid rgba(212, 168, 67, 0.35);
+  color: #c8a227;
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.menu-toggle:hover {
+  background: rgba(212, 168, 67, 0.18);
+  border-color: rgba(212, 168, 67, 0.6);
+  color: #f0cb6e;
+}
+
+
+/* ============================================================
+   04. MOBILE NAV OVERLAY
+   ROOT FIX: default is display:none so it takes zero space.
+   .active adds display:flex so it appears when JS opens it.
+   This replaces the broken opacity/visibility-only approach
+   that left the nav invisible even when .active was added.
+   ============================================================ */
+.mobile-nav {
+  display: none !important;        /* hidden by default — takes NO space */
+  position: fixed;
+  top: 78px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 78px);
+  background: #0d0620;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 16px;
+  overflow-y: auto;
+  z-index: 9000;
+
+  /* Slide-in animation */
+  opacity: 0;
+  transform: translateY(-12px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+/* JS adds .active → menu appears */
+.mobile-nav.active {
+  display: flex !important;        /* overrides the display:none above */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ============================================================
+   05. MOBILE NAV — PARENT LINKS  (Home, About, Contact)
+   ============================================================ */
+.mobile-nav .mnav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.22s, border-color 0.22s,
+              color 0.22s, transform 0.18s;
+}
+
+.mobile-nav .mnav-link:hover {
+  background: rgba(212, 168, 67, 0.13);
+  border-color: rgba(212, 168, 67, 0.45);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+
+/* ============================================================
+   06. SERVICES ACCORDION — TRIGGER
+   ============================================================ */
+.mobile-nav .mnav-services-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  border: 1px solid rgba(212, 168, 67, 0.28);
+  background: rgba(212, 168, 67, 0.07);
+  color: #f0cb6e;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 14px 14px 0 0;
+  transition: background 0.22s, border-color 0.22s;
+  user-select: none;
+}
+
+.mobile-nav .mnav-services-trigger.open {
+  background: rgba(212, 168, 67, 0.15);
+  border-color: rgba(212, 168, 67, 0.55);
+}
+
+.mobile-nav .mnav-services-trigger:hover {
+  background: rgba(212, 168, 67, 0.18);
+  border-color: rgba(212, 168, 67, 0.55);
+}
+
+
+/* ============================================================
+   07. CHEVRON ARROW
+   ============================================================ */
+.mnav-chevron {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid rgba(212, 168, 67, 0.8);
+  border-bottom: 2px solid rgba(212, 168, 67, 0.8);
+  transform: rotate(45deg);
+  transition: transform 0.28s ease;
+  flex-shrink: 0;
+  margin-top: -3px;
+}
+
+.mnav-chevron.up {
+  transform: rotate(-135deg);
+  margin-top: 4px;
+}
+
+
+/* ============================================================
+   08. SERVICES SUB-LINKS DRAWER
+   ============================================================ */
+.mnav-sub-drawer {
+  overflow: hidden;
+  max-height: 0;
+  background: rgba(212, 168, 67, 0.03);
+  border: 1px solid rgba(212, 168, 67, 0.22);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mnav-sub-drawer.open {
+  max-height: 400px;
+}
+
+
+/* ============================================================
+   09. SUB-ITEMS
+   ============================================================ */
+.mnav-sub-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px 13px 28px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  position: relative;
+  transition: background 0.18s, color 0.18s, padding-left 0.2s;
+}
+
+.mnav-sub-item:last-child {
+  border-bottom: none;
+}
+
+
+
+/* ============================================================
+   10. MOBILE BREAKPOINT  (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Show hamburger button */
+  .menu-toggle {
+    display: block !important;
+  }
+
+  /* Hide desktop nav links */
+  .main-nav {
+    display: none !important;
+  }
+
+  /* Hide desktop CTA buttons */
+  .nav-actions {
+    display: none !important;
+  }
+
+  /* Fix topbar stacking that caused blank space at top */
+  .topbar-inner {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .topbar-left {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  /* Shrink topbar pills on small screens */
+  .topbar-left span,
+  .topbar-inner > span {
+    font-size: 12px !important;
+    padding: 3px 8px !important;
+  }
+}
+
+
+/* ============================================================
+   11. DESKTOP SAFETY  (min-width: 769px)
+   Force hamburger + mobile nav hidden — no exceptions.
+   ============================================================ */
+@media (min-width: 769px) {
+
+  .menu-toggle {
+    display: none !important;
+  }
+
+  /* Override the .active display:flex on desktop */
+  .mobile-nav,
+  .mobile-nav.active {
+    display: none !important;
+  }
+}
+
+/* Services trigger — span behaves like nav link but has no href */
+.mega-menu .mega-trigger {
+  cursor: pointer;
+  color: rgba(2, 2, 2, 0.945);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 13.5px;
+  letter-spacing: .04em;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: color .2s, background .2s;
+  display: inline-block;
+}
+
+.mega-menu .mega-trigger:hover {
+  color: rgb(239, 9, 9);
+  background: rgba(212, 168, 67, 0.1);
+}
+
+/* Active state on Services trigger */
+.mega-menu .mega-trigger.active {
+  color: rgb(251, 6, 6);
+}
+
+.mega-menu .mega-trigger.active::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  bottom: 4px;
+  width: calc(100% - 28px);
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+}

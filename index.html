@@ -1,0 +1,1384 @@
+<!-- ========================= FILE: index.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK Defence Services | Security · IT · Construction · Hospitality</title>
+  <meta name="description" content="UK Defence Services provides professional security and cleaning services across the UK for offices, construction sites, retail premises, events and commercial properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <link rel="stylesheet" href="cookie.css">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hamburger-fix.css">
+
+
+</head>
+
+<body class="has-custom-cursor">
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+  <!-- ===== START: Top Bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+
+        <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+          <a href="tel:03332248175" style="color: #1a0e00; text-decoration: none;">
+            📞 0333 224 8175 </a>
+        </span>
+
+        
+      <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+         <a href="mailto:enquiries@ukdefenceservices.co.uk" style="color: #1a0e00; text-decoration: none;">
+           📧 enquiries@ukdefenceservices.co.uk </a>
+      </span>
+
+      </div>
+       <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; 
+       border-radius: 20px;">From £16/hr + VAT</span>
+     
+    </div>
+  </div>
+  <!-- ===== END: Top Bar ===== -->
+
+  <!-- ===== START: Header / Navigation ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="UK Defence Services Logo" class="brand-logo-img" />
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+
+      <div class="mega-menu">
+        <a href="services.html" class="mega-trigger">Services ▾</a>
+        <div class="mega-content">
+          <div class="mega-column">
+            <h4>Security</h4>
+            <a href="security.html">🛡 Security Services</a>
+            <p>Manned guarding, patrols, CCTV and event security.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Cleaning</h4>
+            <a href="cleaning.html">🧹 Cleaning Services</a>
+            <p>Commercial, office and deep cleaning for all premises.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Construction</h4>
+            <a href="construction.html">🏗 Construction Services</a>
+            <p>Labour supply, site support and skilled trades.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Hospitality</h4>
+            <a href="hospitality.html">🍽 Hospitality Staffing</a>
+            <p>Front-of-house and event hospitality staff.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Technology</h4>
+            <a href="it-services.html">💻 IT &amp; Digital</a>
+            <p>Web development, SaaS and digital marketing.</p>
+          </div>
+          <div class="mega-column">
+            <h4>All Services</h4>
+            <a href="services.html">📋 View All Services</a>
+            <p>See our full range of professional services.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-icon whatsapp-btn" href="https://wa.me/447380738256">
+        <span>💬</span> WhatsApp
+      </a>
+      <a class="btn btn-gold" href="contact.html">Get Quote</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  </div>
+</header>
+<!-- ===== END: Header / Navigation ===== -->
+
+
+<!-- ===== MOBILE NAV — outside header so position:fixed works correctly ===== -->
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="index.html" class="mnav-link">Home</a>
+  <a href="about.html" class="mnav-link">About</a>
+
+  <div class="mnav-services-trigger" id="svcTrigger" onclick="toggleMobileServices()">
+    <span>Services</span>
+    <span class="mnav-chevron" id="svcChevron"></span>
+  </div>
+
+  <div class="mnav-sub-drawer" id="svcDrawer">
+    <a href="security.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🛡</span> Security Services
+    </a>
+    <a href="cleaning.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🧹</span> Cleaning Services
+    </a>
+    <a href="construction.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🏗</span> Construction
+    </a>
+    <a href="hospitality.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🍽</span> Hospitality
+    </a>
+    <a href="it-services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">💻</span> IT &amp; Digital
+    </a>
+    <a href="services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">📋</span> All Services
+    </a>
+  </div>
+
+  <a href="contact.html" class="mnav-link">Contact</a>
+
+</div>
+<!-- ===== END: MOBILE NAV ===== -->
+  <!-- ===== END: Header / Navigation ===== -->
+
+
+  <!-- Everypage change here-->
+
+  <!-- ===== START: Hero Carousel ===== -->
+
+<section class="hero hero-home">
+  <div class="hero-bg-lines"></div>
+  <div class="hero-carousel" id="heroCarousel">
+
+    <!-- ================================================ -->
+    <!-- SLIDE 1 — Overview (All Services)                -->
+    <!-- ================================================ -->
+    <div class="hero-slide active security-slide"
+      style="background-image:
+        linear-gradient(90deg, rgba(7,18,38,.78), rgba(7,18,38,.46)),
+        url('Security.png');">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Trusted • Professional • Responsive</span>
+          <h1>One Partner.<br><span>Every Business Need.</span></h1>
+          <p>UK Defence Services delivers professional security, cleaning, construction, IT and hospitality staffing solutions for organisations that demand trust, standards and visible professionalism.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="contact.html">Request a Free Quote</a>
+            <a class="btn btn-ghost" href="services.html">Explore All Services</a>
+          </div>
+          <div class="hero-points">
+            <span>24/7 Support</span>
+            <span>Commercial Clients</span>
+            <span>Rapid Response</span>
+            <span>UK-Wide Coverage</span>
+          </div>
+        </div>
+
+        <div class="hero-card-grid">
+          <div class="hero-mini-card glass-card">
+            <div class="hero-mini-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M12 2L4 6v6c0 5 3.8 9.7 8 10 4.2-.3 8-5 8-10V6l-8-4z"/>
+              </svg>
+            </div>
+            <h3>Security Services</h3>
+            <p>Manned guarding, mobile patrols, CCTV monitoring and event security nationwide.</p>
+          </div>
+          <div class="hero-mini-card glass-card">
+            <div class="hero-mini-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M3 21l6-6M14 4l6 6M8 16l6-6"/>
+              </svg>
+            </div>
+            <h3>Cleaning Services</h3>
+            <p>Commercial, office and deep cleaning with consistent, professional standards.</p>
+          </div>
+          <div class="hero-mini-card glass-card">
+            <div class="hero-mini-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <rect x="3" y="4" width="18" height="12" rx="2"/>
+                <path d="M8 20h8"/>
+              </svg>
+            </div>
+            <h3>IT Services</h3>
+            <p>SaaS solutions, web development, graphic design and social media marketing.</p>
+          </div>
+          <div class="hero-mini-card glass-card">
+            <div class="hero-mini-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 20h16M6 20V10l6-4 6 4v10"/>
+              </svg>
+            </div>
+            <h3>Construction Services</h3>
+            <p>Site support, skilled labour supply and operational assistance for construction projects.</p>
+          </div>
+          <div class="hero-mini-card glass-card">
+            <div class="hero-mini-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Hospitality Staffing</h3>
+            <p>Reliable front-of-house, catering and event staffing for venues across the UK.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDE 1 -->
+
+    <!-- ================================================ -->
+    <!-- SLIDE 2 — Security                               -->
+    <!-- ================================================ -->
+    <div class="hero-slide"
+      style="background-image:
+        linear-gradient(90deg, rgba(7,18,38,.80), rgba(7,18,38,.48)),
+        url('Security.png');">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Licensed • Vetted • Always On</span>
+          <h1>Professional Security Services<br><span>You Can Rely On 24/7.</span></h1>
+          <p>UK Defence Services provides SIA-licensed manned guarding, mobile patrols, CCTV monitoring and event security for commercial, retail and public-sector clients across the UK.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="contact.html">Get a Security Quote</a>
+            <a class="btn btn-ghost" href="services.html">View Security Services</a>
+          </div>
+          <div class="hero-points">
+            <span>SIA Licensed Guards</span>
+            <span>Mobile Patrols</span>
+            <span>CCTV Support</span>
+            <span>Event Security</span>
+          </div>
+        </div>
+
+        <div class="hero-side-card hero-stat-stack glass-card">
+          <div class="hero-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L4 6v6c0 5 3.8 9.7 8 10 4.2-.3 8-5 8-10V6l-8-4z"/>
+            </svg>
+          </div>
+          <h3 style="color:#f5c35b;">Why Choose Us</h3>
+          <ul>
+            <li>SIA-licensed &amp; fully vetted officers</li>
+            <li>24/7 control room support</li>
+            <li>Rapid deployment nationwide</li>
+            <li>Bespoke risk assessments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDE 2 -->
+
+    <!-- ================================================ -->
+    <!-- SLIDE 3 — Cleaning                               -->
+    <!-- ================================================ -->
+    <div class="hero-slide"
+      style="background-image:
+        linear-gradient(90deg, rgba(7,18,38,.8), rgba(7,18,38,.48)),
+        url('cleaning.png');">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Clean • Consistent • Professional</span>
+          <h1>Commercial Cleaning Services<br><span>That Make a Lasting Impression.</span></h1>
+          <p>From daily office cleans to specialist deep cleaning contracts, UK Defence Services maintains spotless environments for businesses, public buildings and high-footfall venues across the UK.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="contact.html">Book a Cleaning Consultation</a>
+          
+          </div>
+          <div class="hero-points">
+            <span>Office Cleaning</span>
+            <span>Deep Cleaning</span>
+            <span>Flexible Contracts</span>
+            <span>Eco-Friendly Products</span>
+          </div>
+        </div>
+
+        <div class="hero-stat-stack glass-card hero-stat-up">
+          <div><strong>50+</strong><span>Sites Supported</span></div>
+          <div><strong>98%</strong><span>Client Satisfaction</span></div>
+          <div><strong>24/7</strong><span>Service Availability</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDE 3 -->
+
+    <!-- ================================================ -->
+    <!-- SLIDE 4 — Construction                           -->
+    <!-- ================================================ -->
+    <div class="hero-slide"
+      style="background-image:
+        linear-gradient(90deg, rgba(7,18,38,.80), rgba(7,18,38,.48)),
+        url('Construction.png');">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Site Support • Labour Supply • Delivery</span>
+          <h1>Construction Support Services<br><span>Built for Reliable Site Operations.</span></h1>
+          <p>UK Defence Services supplies skilled site labour, operational support staff and project assistance to construction companies and contractors who need dependable, safety-conscious teams on the ground.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="contact.html">Request Site Support</a>
+            <a class="btn btn-ghost" href="services.html">Explore Construction Services</a>
+          </div>
+          <div class="hero-points">
+            <span>Skilled Labour Supply</span>
+            <span>Site Assistance</span>
+            <span>Health &amp; Safety Compliant</span>
+            <span>Flexible Coverage</span>
+          </div>
+        </div>
+
+        <div class="hero-side-card hero-stat-stack glass-card">
+          <div class="hero-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h0A1.7 1.7 0 0 0 10.5 3H11a2 2 0 1 1 4 0h-.1a1.7 1.7 0 0 0 1 1.5h0a1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v0A1.7 1.7 0 0 0 21 10.5V11a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path>
+            </svg>
+          </div>
+          <h3 style="color:#f5c35b;">Operational Excellence</h3>
+          <ul>
+            <li>Fully trained &amp; certified staff</li>
+            <li>Rapid response deployment</li>
+            <li>Flexible site coverage</li>
+            <li>Consistent service standards</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDE 4 -->
+
+    <!-- ================================================ -->
+    <!-- SLIDE 5 — IT Services                            -->
+    <!-- ================================================ -->
+    <div class="hero-slide"
+      style="background-image:
+        linear-gradient(90deg, rgba(7,18,38,.80), rgba(7,18,38,.48)),
+        url('IT.png');">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Digital • Scalable • Results-Driven</span>
+          <h1>IT &amp; Digital Solutions<br><span>Built to Grow Your Business.</span></h1>
+          <p>From bespoke web development and SaaS platforms to graphic design and social media marketing, UK Defence Services helps organisations build a powerful, measurable digital presence.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="contact.html">Start Your Digital Project</a>
+            <a class="btn btn-ghost" href="services.html">Explore IT Services</a>
+          </div>
+          <div class="hero-points">
+            <span>Web Development</span>
+            <span>SaaS Solutions</span>
+            <span>Graphic Design</span>
+            <span>Social Media Marketing</span>
+          </div>
+        </div>
+
+        <div class="hero-side-card hero-stat-stack glass-card">
+          <div class="hero-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12l4-4 4 4 4-4 6 6"></path>
+            </svg>
+          </div>
+          <h3 style="color:#f5c35b;">Our Digital Promise</h3>
+          <ul>
+            <li>Clear, transparent communication</li>
+            <li>On-time, on-budget delivery</li>
+            <li>SEO &amp; performance-first builds</li>
+            <li>Long-term support partnerships</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDE 5 -->
+
+    <!-- ================================================ -->
+    <!-- SLIDE 6 — Hospitality Staffing                   -->
+    <!-- ================================================ -->
+    <div class="hero-slide"
+      style="background-image:
+        linear-gradient(90deg, rgba(7,18,38,.80), rgba(7,18,38,.48)),
+        url('Hospitality.png');">
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Front-of-House • Events • Catering</span>
+          <h1>Hospitality Staffing Solutions<br><span>That Elevate Every Guest Experience.</span></h1>
+          <p>UK Defence Services supplies experienced, professional hospitality staff — from front-of-house and bar teams to event catering crews — helping venues, hotels and corporate clients deliver exceptional service every time.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="contact.html">Enquire About Staffing</a>
+            <a class="btn btn-ghost" href="services.html">Explore Hospitality Services</a>
+          </div>
+          <div class="hero-points">
+            <span>Event Staffing</span>
+            <span>Front-of-House Teams</span>
+            <span>Catering Support</span>
+            <span>Short &amp; Long-Term Contracts</span>
+          </div>
+        </div>
+
+        <div class="hero-side-card hero-stat-stack glass-card">
+          <div class="hero-mini-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 style="color:#f5c35b;">Staffing You Can Trust</h3>
+          <ul>
+            <li>Fully vetted &amp; trained personnel</li>
+            <li>Last-minute cover available</li>
+            <li>Uniformed, presentable teams</li>
+            <li>UK-wide placement capability</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDE 6 -->
+
+  </div><!-- /hero-carousel -->
+
+  <div class="hero-dots" id="heroDots">
+    <button class="active" data-slide="0"></button>
+    <button data-slide="1"></button>
+    <button data-slide="2"></button>
+    <button data-slide="3"></button>
+    <button data-slide="4"></button>
+    <button data-slide="5"></button>
+  </div>
+</section>
+
+
+  <!-- ===== END: Hero Carousel ===== -->
+
+  <!-- Every Page content will change from-->
+  <!-- ===== START: PREMIUM TRUST STRIP ===== -->
+<section class="section pull-up-strip reveal">
+  <div class="container">
+    <div class="section-heading center-width">
+        <span class="tag-label">OUR ADVANTAGE</span>
+        <h2>Trusted. Responsive. Professional. Across Every Service.</h2>
+        <p>Providing dependable security, construction, hospitality staffing and IT services
+            for organisations that value professionalism and consistent support.</p>
+      </div>
+
+      
+    <div class="premium-strip-wrap">
+
+        <div class="premium-strip-card reveal">
+        <div class="premium-strip-icon">🏢</div>
+        <small>Trusted By</small>
+        <strong>Commercial premises, offices and sites</strong>
+      </div>
+
+      <div class="premium-strip-card reveal">
+        <div class="premium-strip-icon">📞</div>
+        <small>Support</small>
+        <strong>Phone, WhatsApp and email enquiries</strong>
+      </div>
+
+      <div class="premium-strip-card reveal">
+        <div class="premium-strip-icon">🛡</div>
+        <small>Coverage</small>
+        <strong>Security + cleaning solutions</strong>
+      </div>
+
+      <div class="premium-strip-card reveal">
+        <div class="premium-strip-icon">✨</div>
+        <small>Approach</small>
+        <strong>Elegant, responsive and professional</strong>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===== END: PREMIUM TRUST STRIP ===== -->
+  
+  
+    <!-- ===== START: Home Services Preview ===== -->
+ <section class="section theme-light reveal">
+  <div class="container">
+    <div class="section-heading center-width">
+      <span class="tag-label">Our Services</span>
+      <h2>Five expert divisions. One trusted business partner.</h2>
+      <p>UK Defence Services operates across security, cleaning, construction, IT and hospitality staffing — delivering each service to the same premium standard.</p>
+    </div>
+
+    <div class="service-feature-grid">
+
+      <article class="feature-tile security">
+        <div class="feature-content">
+          <span class="feature-badge">Security Services</span>
+          <h3>Professional Protection</h3>
+          <p>Manned guarding, mobile patrols, CCTV support and event security for business-critical environments.</p>
+          <a href="services.html" class="btn btn-small btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="feature-tile cleaning">
+        <div class="feature-content">
+          <span class="feature-badge">Cleaning Services</span>
+          <h3>Immaculate Standards</h3>
+          <p>Commercial and office cleaning tailored for modern workspaces and public-facing sites.</p>
+          <a href="cleaning.html" class="btn btn-small btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="feature-tile construction">
+        <div class="feature-content">
+          <span class="feature-badge">Construction Services</span>
+          <h3>Reliable Site Support</h3>
+          <p>Labour supply, site assistance and operational support to keep construction projects running safely.</p>
+          <a href="construction.html" class="btn btn-small btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="feature-tile it">
+        <div class="feature-content">
+          <span class="feature-badge">IT &amp; Digital</span>
+          <h3>Smart Digital Solutions</h3>
+          <p>SaaS solutions, web development, graphic design and social media marketing for growing businesses.</p>
+          <a href="it-services.html" class="btn btn-small btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="feature-tile hospitality">
+        <div class="feature-content">
+          <span class="feature-badge">Hospitality Staffing</span>
+          <h3>Exceptional Guest Experiences</h3>
+          <p>Professional front-of-house, catering and event staff for venues, hotels and corporate clients UK-wide.</p>
+          <a href="hospitatlity.html" class="btn btn-small btn-primary">Learn More</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+  <!-- ===== END: Home Services Preview ===== -->
+
+
+ 
+
+
+
+  <!-- ===== START: Why Choose Us ===== -->
+ <section class="section theme-soft-blue reveal">
+  <div class="container">
+    <div class="section-heading center-align">
+      <span class="tag-label">Why Choose Us</span>
+      <h2>Our experienced team, tailored solutions and commitment to quality ensure reliable service delivery for businesses across the UK.</h2>
+    </div>
+    <div class="icon-card-grid four-col" style="margin-top:50px;">
+      <div class="icon-card reveal">
+        <div class="icon-bubble">🏅</div>
+        <h3>Fully Accredited</h3>
+        <p>SIA licensed security personnel, fully insured operations and compliance with UK regulatory standards.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-bubble">⚡</div>
+        <h3>Rapid Response</h3>
+        <p>Fast mobilisation and rapid response capabilities for urgent security or support requirements.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-bubble">🤝</div>
+        <h3>Tailored Solutions</h3>
+        <p>Bespoke service packages designed around your specific business requirements and budget.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-bubble">📊</div>
+        <h3>Proven Track Record</h3>
+        <p>A consistent record of delivering professional services to commercial clients across England.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== END: Why Choose Us ===== -->
+
+  <!-- ===== START: Clients ===== -->
+  <section class="section theme-white reveal">
+  <div class="container">
+    <div class="section-heading center-width">
+      <span class="tag-label">Industries We Serve</span>
+      <h2>Trusted by businesses across diverse sectors.</h2>
+    </div>
+    <div class="logo-strip">
+      <div class="logo-chip">🏢<br>Offices &amp; Corporates</div>
+      <div class="logo-chip">🏗<br>Construction Sites</div>
+      <div class="logo-chip">🛒<br>Retail &amp; Hospitality</div>
+      <div class="logo-chip">🏥<br>Healthcare &amp; Education</div>
+      <div class="logo-chip">🎪<br>Events &amp; Venues</div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== END: Clients ===== -->
+
+  <!-- ===== START: ACCREDITATIONS SECTION ===== -->
+<section class="section accreditation-section reveal">
+
+  <div class="container">
+
+    <div class="section-heading-acc center-align">
+      <span class="tag-label ">Our Standards</span>
+      <h2>Our Accreditations & Professional Standards</h2>
+      <p>
+        UK Defence Services follows recognised industry standards and professional
+        practices to ensure reliable, compliant and high-quality security services.
+      </p>
+    </div>
+
+    <div class="logo-marquee">
+  <div class="logo-track">
+
+      <div class="accreditation-card"><img src="SafeContractor.png" alt="SafeContractor"> </div>
+      <div class="accreditation-card"><img src="Nasdu.png" alt="Nasdu"></div>
+      <div class="accreditation-card"><img src="SMAS_WorkSafe.png" alt="SMAS_WorkSafe"></div>
+      <div class="accreditation-card"><img src="Constructionline.png" alt="Contructionline"></div>
+     <div class="accreditation-card"><img src="Chas.png" alt="Chas"></div>
+
+     <!-- Duplicate-->
+    <div class="accreditation-card"><img src="SafeContractor.png" alt="SafeContractor"> </div>
+      <div class="accreditation-card"><img src="Nasdu.png" alt="Nasdu"></div>
+      <div class="accreditation-card"><img src="SMAS_WorkSafe.png" alt="SMAS_WorkSafe"></div>
+      <div class="accreditation-card"><img src="Constructionline.png" alt="Contructionline"></div>
+     <div class="accreditation-card"><img src="Chas.png" alt="Chas"></div> 
+    </div>
+
+  </div>
+  </div>
+
+</section>
+<!-- ===== END: ACCREDITATIONS SECTION ===== -->
+
+  <!-- ===== START: Review Section -->
+
+<section class="reviews-section">
+  <div class="reviews-header">
+    <h2>Trusted by Clients Across the UK</h2>
+    <p>Reliable security, cleaning, IT & construction services you can depend on</p>
+  </div>
+
+  <div class="google-badge">
+    <div class="badge-left">
+      <div class="g-logo">
+        <span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
+      </div>
+      <div>
+        <h3>5.0</h3>
+        <div class="stars">★★★★★</div>
+        <p>Rated 5.0 on Google</p>
+      </div>
+    </div>
+
+    <a href="https://www.google.com/search?sca_esv=8f19c72cf42aa264&sxsrf=ANbL-n7tC4eh6jnr_g90RzQeXq5UlW4QOg:1774437989659&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOQL97Y-yTmTCh1NS-DP-a7ZT7BzmAkIQPrWPARM6wcax31gt0BEiFDCafo8_tliyRqDTreuf7JcyokKJxMlJZxY6vDEgeDrJE3E9h-7bRKUhbtFy7Q%3D%3D&q=UK+DEFENCE+SERVICES+LTD+Reviews&sa=X&ved=2ahUKEwjQuLLQ-LqTAxVvWUEAHSLfGUEQ0bkNegQIHRAH&biw=1528&bih=732&dpr=2.5" target="_blank">View All Reviews</a>
+  </div>
+
+  <div class="reviews-marquee">
+    <div class="reviews-track">
+
+      <!-- CARD 1 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Extremely reliable and professional. Their team is punctual and highly trained.</p>
+        
+        <div class="review-user">
+        <div class="avatar g-blue">
+            JA
+            <span class="verified"></span>
+        </div>
+        <div>
+            <h4>Jasmine Akrami</h4>
+            <span>Manager </span>
+        </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Responsive, professional and efficient. Fantastic company to work with.</p>
+       
+        <div class="review-user">
+  <div class="avatar g-red">
+    SE
+    <span class="verified"></span>
+  </div>
+  <div>
+    <h4>Sophia Events</h4>
+    <span>Oprational Manager</span>
+  </div>
+</div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Highly recommend we have been using them recently - great professionalism.</p>
+        
+        <div class="review-user">
+  <div class="avatar g-yellow">
+  AR
+    <span class="verified"></span>
+  </div>
+  <div>
+    <h4>Abid Riaz</h4>
+    <span>CEO </span>
+  </div>
+</div>    
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>My experience with this security company was very positive. All instructions were clear, they trusted me to do my job, and everything was well coordinated</p>
+       
+       <div class="review-user">
+  <div class="avatar g-green">
+    AK
+    <span class="verified"></span>
+  </div>
+  <div>
+    <h4>Aachint Kamboj Kamboj</h4>
+    <span>Director</span>
+  </div>
+</div>
+       
+
+      </div>
+
+      <!-- DUPLICATE SAME 4 CARDS AGAIN -->
+
+    <!-- CARD 1 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Extremely reliable and professional. Their team is punctual and highly trained.</p>
+        
+        <div class="review-user">
+        <div class="avatar g-blue">
+            JA
+            <span class="verified"></span>
+        </div>
+        <div>
+            <h4>Jasmine Akrami</h4>
+            <span>Manager </span>
+        </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Responsive, professional and efficient. Fantastic company to work with.</p>
+       
+        <div class="review-user">
+  <div class="avatar g-red">
+    SE
+    <span class="verified"></span>
+  </div>
+  <div>
+    <h4>Sophia Events</h4>
+    <span>Oprational Manager</span>
+  </div>
+</div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>Highly recommend we have been using them recently - great professionalism.</p>
+        
+        <div class="review-user">
+  <div class="avatar g-yellow">
+    AR
+    <span class="verified"></span>
+  </div>
+  <div>
+    <h4>Abid Riaz</h4>
+    <span>CEO </span>
+  </div>
+</div>    
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>My experience with this security company was very positive. All instructions were clear, they trusted me to do my job, and everything was well coordinated</p>
+       
+       <div class="review-user">
+  <div class="avatar g-green">
+    AK
+    <span class="verified"></span>
+  </div>
+  <div>
+    <h4>Aachint Kamboj Kamboj</h4>
+    <span>Director</span>
+  </div>
+</div>
+       
+
+      </div>
+
+
+    </div>
+  </div>
+</section>
+  
+
+<!--  End premium Review Section -->
+  
+
+  <!-- ===== START: CTA Banner ===== -->
+  <section class="section theme-gradient-cta">
+    <div class="container cta-banner">
+      <div>
+        <span class="tag-label white-tag">Get in Touch</span>
+        <h2 class="cta-heading">Professional security, cleaning, IT and construction services across the UK</h2>
+        <p>We provide reliable and fully managed security, cleaning, IT and construction support 
+          tailored to your business needs. Speak to our team via phone, WhatsApp or our contact form to receive a fast, customised quote.</p>
+      </div>
+      <div class="cta-buttons-col">
+        <!--<a class="btn btn-outline btn-icon" href="https://wa.me/447380738256"><span>📞</span> Call Now </a >--> 
+        <a href="tel:03332248175" class="btn btn-light call-btn"> <span>📞</span> Call Now </a>
+        <!-- <a href="tel:03332248175" class="btn btn-light btn-icon"><span>📞</span> Call Now</a>  -->  
+         
+        
+         
+        <a href="https://wa.me/447380738256" class="btn btn-gold btn-icon"><span>💬</span> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== END: CTA Banner ===== -->
+
+  
+<!-- ===== Start: New FAQ Section ===== -->
+<section class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <!-- TABS -->
+    <div class="faq-tabs">
+      <button class="tab active" onclick="openTab('general', this)">📌 General</button>
+      <button class="tab" onclick="openTab('security', this)">🔒 Security</button>
+      <button class="tab" onclick="openTab('cleaning', this)">🧹 Cleaning</button>
+      <button class="tab" onclick="openTab('it', this)">💻 IT</button>
+      <button class="tab" onclick="openTab('construction', this)">🏗️ Construction</button>
+      <button class="tab" onclick="openTab('hospitality', this)">🤝 Hospitality</button>
+    </div>
+
+    <!-- GENERAL -->
+    <div class="faq-content active" id="general">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What services does UK Defence Services provide?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We provide security, cleaning, IT, construction support and hospitality staffing services across the UK, offering a complete solution for businesses that demand trust, standards and visible professionalism.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Which areas do you cover?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We operate across the whole of the UK including London, Manchester, Birmingham, Leeds, stafforshire, Sheffield and surrounding areas. For large projects we can also arrange staff accommodation and transport regardless of location.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I use more than one service at the same time?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Our services are designed to work seamlessly together, for example, combining security and cleaning,
+             or IT and hospitality staffing. Having one trusted partner across multiple services simplifies your operations and provides
+              a single point of contact.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How do I get a quote?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Simply contact us via our online enquiry form, email or phone. We will arrange a free consultation to understand your requirements and provide a tailored, no-obligation quote within 24 hours.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are your staff insured and fully vetted?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. All staff across every division are thoroughly vetted, reference-checked and covered under our comprehensive public liability and employers liability insurance. We maintain full compliance records for every operative we deploy.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECURITY -->
+    <div class="faq-content" id="security">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are your security guards SIA licensed?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Every security officer deployed by UK Defence Services holds a valid SIA (Security Industry Authority) licence. We carry out rigorous background checks, identity verification and ongoing training to ensure all personnel meet the highest industry standards before being placed on any site.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How quickly can you deploy security personnel?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>In most cases we can deploy vetted, licensed officers within 5-7 hours of contract agreement. For emergency situations we operate a rapid response service and will do everything possible to get cover in place as quickly as your situation demands.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What types of premises do you cover?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We provide security for commercial offices, retail premises, construction sites, warehouses, events, hospitals, schools and public-sector buildings. Our risk assessment process ensures the right officer profile and security plan for every site type.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can you provide mobile patrol services?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our mobile patrol teams conduct regular, randomised check visits to your premises, providing a visible
+             deterrent without the cost of a full-time static guard. Each patrol is logged and you receive a written report after every visit.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you provide 24/7 security coverage?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. We operate a 24/7 control room and can provide round-the-clock manned guarding, and mobile patrols . Whether you need daytime security, overnight cover or weekend-only protection, we tailor a schedule to your exact requirements.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you offer event security services?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We provide professional event security for corporate functions, public events, concerts, exhibitions and private occasions. Our teams are trained in crowd management, access control and emergency procedures, ensuring your event runs safely from start to finish.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLEANING -->
+    <div class="faq-content" id="cleaning">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What types of cleaning contracts do you offer?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We offer daily, weekly and bespoke cleaning contracts to suit your business. Whether you require early morning office cleans, daytime operatives on-site or one-off deep cleans, we build a schedule around your operations with no disruption to your working day.</p>
+        </div>
+      </div>
+
+      <!--  
+      
+       <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you use eco-friendly cleaning products?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We prioritise environmentally responsible cleaning solutions across all contracts. Our products are COSHH compliant, low-VOC and where possible biodegradable, helping your business reduce its environmental impact without compromising on hygiene standards.</p>
+        </div>
+      </div>
+      -->
+
+    
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can you carry out deep cleaning services?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our specialist deep cleaning teams handle everything from industrial kitchen cleans and carpet extraction to end-of-tenancy and post-construction cleans. Deep cleaning is available as a standalone service or as a periodic addition to your regular contract.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are your cleaning staff vetted and insured?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>All cleaning operatives are fully vetted, reference-checked and covered under our comprehensive public liability and employers liability insurance. We carry out thorough inductions and regular supervision to ensure consistent quality across every site.</p>
+        </div>
+      </div>
+
+      <!-- 
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you provide cleaning supplies and equipment?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We supply all necessary cleaning materials, chemicals and equipment as part of your contract. There is nothing you need to provide — our teams arrive fully equipped and prepared to deliver a professional result every time.</p>
+        </div>
+      </div>
+
+      -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can cleaning schedules be adjusted at short notice?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our operations team is available to adjust your schedule, increase frequency or arrange additional cleans at short notice. Simply contact your dedicated account manager and we will accommodate your request as quickly as possible.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IT -->
+    <div class="faq-content" id="it">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What IT and digital services do you offer?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We offer bespoke website design and development, SaaS platform setup, graphic design, branding, social media management and paid digital marketing campaigns. Whether you need a single service or a complete digital strategy, we deliver measurable results for your business.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How long does it take to build a website?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>A standard business website typically takes 1 to 2 weeks from briefing to launch. 
+            Larger e-commerce or bespoke web applications may take 4 to 6 weeks. We provide a clear project timeline at the start of every engagement so you always know what to expect.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Will my website be optimised for search engines?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Every website we build is developed with SEO best practices from the ground up, including optimised page structure, meta data, fast load speeds, mobile responsiveness and clean code. We also offer ongoing SEO services to help your business rank higher over time.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you manage social media accounts on an ongoing basis?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We offer monthly social media management packages covering content creation, scheduling, community management and performance reporting across LinkedIn, Instagram, Facebook and X, creating content that reflects your brand and engages your audience.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can you help with graphic design and branding?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our design team creates logos, brand identities, marketing materials, signage, presentation decks and digital assets. Whether launching a new brand or refreshing an existing one, we deliver professional, consistent design across every touchpoint.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you offer support and maintenance after a website goes live?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We offer ongoing maintenance packages covering security updates, performance monitoring, content changes and technical troubleshooting. We become your long-term digital partner, ensuring your website stays fast, secure and up to date at all times.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSTRUCTION -->
+    <div class="faq-content" id="construction">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What construction support services do you provide?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We provide skilled and semi-skilled labour supply, site support staff, banksmen, groundworkers and general operatives for construction projects of all sizes. We also supply site supervisors, safety marshals and administrative support to keep your project running efficiently.</p>
+        </div>
+      </div>
+      <!-- 
+       <div class="faq-item">
+        <button class="faq-question">
+          <span>Are your construction workers CSCS card holders?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. All construction operatives hold valid CSCS cards appropriate to their trade and skill level. We verify all certifications before deployment and maintain up-to-date records for every operative on our books.</p>
+        </div>
+      </div>
+      
+      -->
+     
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can you supply labour for short-term or emergency projects?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We specialise in rapid labour deployment for both planned and emergency situations. If a subcontractor lets you down or you need additional operatives at short notice, our resourcing team can typically provide vetted workers within 24 to 48 hours.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do your staff comply with site health and safety requirements?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Health and safety compliance is non-negotiable. All operatives receive site inductions, hold relevant certifications and are briefed on your specific site rules before commencing work. We carry full public liability insurance and ensure every worker meets your principal contractor's requirements.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you work with both large contractors and small builders?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We work with principal contractors on major developments as well as smaller building firms who need additional hands for specific phases of a project. Our flexible approach means we scale our service to suit the size and complexity of your build.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What regions do you cover for construction labour supply?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We supply construction labour across the whole of the UK. For large or long-term projects we can also arrange accommodation and transport solutions to ensure reliable attendance regardless of location.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOSPITALITY -->
+    <div class="faq-content" id="hospitality">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What hospitality roles can you supply staff for?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We supply waiting staff, bar staff, event hosts, catering assistants, kitchen porters, banqueting staff, receptionists and event supervisors. Whether you need one person or a full team, we match the right people to your event or venue requirements.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can you provide staff for one-off events?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. We cater for both one-off events and ongoing staffing requirements. Whether it is a corporate dinner, gala evening, product launch or sporting event, we supply professional uniformed staff at short notice with no long-term commitment required.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How are your hospitality staff presented?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>
+           Presentation is a priority. All our staff arrive in appropriate uniform, well-groomed and fully briefed on your event 
+           requirements before arrival. We understand that our team is a direct reflection of your brand, and we ensure every team member
+            represents you to the highest standard
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do your hospitality staff have relevant experience?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We only place experienced hospitality professionals who have been interviewed, reference-checked and assessed for the specific role required. Many of our staff have backgrounds in hotels, restaurants, banqueting and large-scale events.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How much notice do you need to arrange hospitality staffing?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We recommend booking as early as possible for large events, but in many cases we can arrange staffing with as little as 24hrs hours notice. Contact our team with your requirements and we will do everything we can to accommodate your timeline.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you supply hospitality staff outside major cities?</span>
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. We supply hospitality staff across the whole of the UK. For events in more remote locations we can arrange travel and where necessary accommodation for staff, ensuring you have the team you need regardless of where your event is taking place.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== END: New FAQ Section ===== -->
+
+
+  <!-- ===== START: Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="UK Defence Services Logo" class="footer-logo" />
+        <p> UK Defence Services Ltd provides professional security, cleaning, IT, and construction 
+          services across England. From manned guarding and CCTV to reliable cleaning, IT solutions, 
+          and on-site support, we keep your business safe, efficient, and professionally maintained.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:03332248175">0333 224 8175</a></li>
+          <li><a href="mailto:enquiries@ukdefenceservices.co.uk">enquiries@ukdefenceservices.co.uk</a></li>
+          <li>Acorn Business Centre, Fountain Street North, Bury, Lancashire, BL9 7AN</li>
+        </ul>
+
+        <a href="contact.html" class="footer-cta">Get Free Quote</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="footer-socials">
+
+<a href="https://www.facebook.com/profile.php?id=61570883460494&locale=en_GB" class="social-chip">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="https://www.instagram.com/uk.defence.services.ltd/" class="social-chip">
+<i class="fa-brands fa-instagram"></i>
+Instagram
+</a>
+
+<a href="https://www.linkedin.com/company/108070191/admin/dashboard/" class="social-chip">
+<i class="fa-brands fa-linkedin-in"></i>
+LinkedIn
+</a>
+
+
+
+
+<a href="https://www.tiktok.com/@uk.defence.services.ltd" class="social-chip">
+<i class="fa-brands fa-tiktok"></i>
+TikTok
+</a>
+
+<!-- =====    ===== 
+ <a href="#" class="social-chip">
+<i class="fa-brands fa-pinterest-p"></i>
+Pinterest
+</a> 
+
+<a href="#" class="social-chip">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a> 
+
+<a href="#" class="social-chip">
+<i class="fa-brands fa-youtube"></i>
+Youtube
+</a> 
+-->
+</div>
+
+        
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">UK Defence Services LTD | 
+      Registered in England and Wales, Company No: 16088343,  VAT Registration No : 496 9058 29
+        <br>© 2026 UK Defence Services. All rights reserved.</div>
+  </footer>
+  <!-- ===== END: Footer ===== -->
+
+ 
+
+  <!-- ===== START: Floating CTA Buttons ===== -->
+  <div class="floating-cta-stack">
+    <a href="tel:03332248175" class="float-btn call">📞</a>
+    <a href="https://wa.me/447380738256" class="float-btn whatsapp">💬</a>
+  </div>
+  <!-- ===== END: Floating CTA Buttons ===== -->
+
+  <!-- ===== START: Live Chat Widget ===== -->
+ 
+ 
+
+
+  
+  <!-- cookies-->
+
+  <div id="cookie-banner" class="cookie-banner">
+  
+  <p class="cookie-text">
+    We use cookies to improve your experience.
+    <a href="cookie-policy.html">Learn more</a>
+  </p>
+
+  <div class="cookie-actions">
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="rejectCookies()">Reject</button>
+  </div>
+
+</div>
+
+ <!-- End cookies-->
+
+  <script src="script.js"></script>
+  <script src="cookie.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

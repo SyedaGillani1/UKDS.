@@ -1,0 +1,394 @@
+
+
+<!-- ========================= FILE: index.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Defence Services | Security · IT · Construction · Hospitality</title>
+  <meta name="description" content="UK Defence Services provides professional security and cleaning services across the UK for offices, construction sites, retail premises, events and commercial properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="cookie.css">
+  <link rel="stylesheet" href="hamburger-fix.css">
+
+
+</head>
+
+<body class="has-custom-cursor">
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+  <!-- ===== START: Top Bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+   <div class="topbar-left">
+
+        <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+          <a href="tel:03332248175" style="color: #1a0e00; text-decoration: none;">
+            📞 0333 224 8175 </a>
+        </span>
+
+        
+      <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+         <a href="mailto:enquiries@ukdefenceservices.co.uk" style="color: #1a0e00; text-decoration: none;">
+           📧 enquiries@ukdefenceservices.co.uk </a>
+      </span>
+
+      </div>
+      
+      <div class="topbar-right">Professional Workforce & Infrastructure Services Across the UK</div>
+    </div>
+  </div>
+  <!-- ===== END: Top Bar ===== -->
+
+  <!-- ===== START: Header / Navigation ===== -->
+  <!-- ===== START: Header / Navigation ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="UK Defence Services Logo" class="brand-logo-img" />
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" >Home</a>
+      <a href="about.html">About</a>
+
+      <div class="mega-menu">
+        <a href="services.html" class="mega-trigger">Services ▾</a>
+        <div class="mega-content">
+          <div class="mega-column">
+            <h4>Security</h4>
+            <a href="security.html">🛡 Security Services</a>
+            <p>Manned guarding, patrols, CCTV and event security.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Cleaning</h4>
+            <a href="cleaning.html">🧹 Cleaning Services</a>
+            <p>Commercial, office and deep cleaning for all premises.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Construction</h4>
+            <a href="construction.html">🏗 Construction Services</a>
+            <p>Labour supply, site support and skilled trades.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Hospitality</h4>
+            <a href="hospitality.html">🍽 Hospitality Staffing</a>
+            <p>Front-of-house and event hospitality staff.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Technology</h4>
+            <a href="it-services.html">💻 IT &amp; Digital</a>
+            <p>Web development, SaaS and digital marketing.</p>
+          </div>
+          <div class="mega-column">
+            <h4>All Services</h4>
+            <a href="services.html">📋 View All Services</a>
+            <p>See our full range of professional services.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-icon whatsapp-btn" href="https://wa.me/447380738256">
+        <span>💬</span> WhatsApp
+      </a>
+      <a class="btn btn-gold" href="contact.html">Get Quote</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  </div>
+</header>
+<!-- ===== END: Header / Navigation ===== -->
+
+
+<!-- ===== MOBILE NAV — outside header so position:fixed works correctly ===== -->
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="index.html" class="mnav-link">Home</a>
+  <a href="about.html" class="mnav-link">About</a>
+
+  <div class="mnav-services-trigger" id="svcTrigger" onclick="toggleMobileServices()">
+    <span>Services</span>
+    <span class="mnav-chevron" id="svcChevron"></span>
+  </div>
+
+  <div class="mnav-sub-drawer" id="svcDrawer">
+    <a href="security.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🛡</span> Security Services
+    </a>
+    <a href="cleaning.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🧹</span> Cleaning Services
+    </a>
+    <a href="construction.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🏗</span> Construction
+    </a>
+    <a href="hospitality.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🍽</span> Hospitality
+    </a>
+    <a href="it-services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">💻</span> IT &amp; Digital
+    </a>
+    <a href="services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">📋</span> All Services
+    </a>
+  </div>
+
+  <a href="contact.html" class="mnav-link">Contact</a>
+
+</div>
+<!-- ===== END: MOBILE NAV ===== -->
+  <!-- ===== END: Header / Navigation ===== -->
+
+ 
+<!--    Hero Section -->
+
+ <section class="page-hero" style="background-image:linear-gradient(90deg, rgba(7,18,38,.82), rgba(7,18,38,.42)), 
+ url('securitypage-carasoul.png');">
+ 
+ <div class="container">
+  <div class="hero-tag"><span class="eyebrow"></span>Security UK Defence Services</div>
+  
+  <h1>Professional Security.<br><span>Trusted 24/7.</span></h1>
+    <p>SIA-licensed manned guarding, mobile patrols, CCTV monitoring, door supervision and event security for commercial clients across the UK.</p>
+    <div class="service-page-hero-stats">
+      <div class="sph-stat"><span class="num">24/7</span><div class="lbl">Round-the-clock protection</div></div>
+      <div class="sph-stat"><span class="num">SIA</span><div class="lbl">Licensed all personnel</div></div>
+      <div class="sph-stat"><span class="num">Fast</span><div class="lbl">Rapid deployment</div></div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- End Hero Section-->
+
+  <!-- ===== START: Security Page Content ===== -->
+
+<!-- OVERVIEW -->
+<section class="section theme-dark">
+  <div class="container">
+    <div class="two-col-content reveal" style="color:white;">
+      <div>
+        <div class="section-heading light">
+          <span class="tag-label dark-tag">What We Provide</span>
+          <h2>Complete security solutions for every business environment.</h2>
+          <p style="color:rgba(255,255,255,.68);">Whether you need a permanent guarding presence, regular patrol visits, crowd management for events or CCTV support — our SIA-licensed team delivers a professional, reliable and visible security service.</p>
+          <p style="color:rgba(255,255,255,.68);margin-top:14px;">All security personnel undergo thorough vetting, right-to-work verification, role-specific training and site briefing before deployment. We maintain strict standards so your site, staff and visitors are always protected.</p>
+        </div>
+        <a href="contact.html" class="btn btn-gold" style="margin-top:28px;">Request Security Cover</a>
+      </div>
+      <div class="scope-grid">
+        <div class="scope-item"><div class="scope-icon">🛡</div><div><h4>Manned Guarding</h4><p>On-site security officers providing constant access control and premises protection.</p></div></div>
+        <div class="scope-item"><div class="scope-icon">🚗</div><div><h4>Mobile Patrols</h4><p>Regular scheduled patrol visits providing visible deterrence across your site.</p></div></div>
+        <div class="scope-item"><div class="scope-icon">📹</div><div><h4>CCTV Monitoring</h4><p>Live and recorded CCTV monitoring integrated with alarm and response systems.</p></div></div>
+        <div class="scope-item"><div class="scope-icon">🚪</div><div><h4>Door Supervision</h4><p>SIA-licensed door supervisors for venues, events and licensed premises.</p></div></div>
+        <div class="scope-item"><div class="scope-icon">🎪</div><div><h4>Event Security</h4><p>Crowd management and event security teams for public and corporate events.</p></div></div>
+        <div class="scope-item"><div class="scope-icon">🔑</div><div><h4>Key Holding</h4><p>Secure key holding with alarm response for out-of-hours incident management.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section theme-light">
+  <div class="container">
+    <div class="section-heading center-width">
+      <span class="tag-label">How It Works</span>
+      <h2>From enquiry to deployment in four steps.</h2>
+    </div>
+    <div class="process-grid" style="margin-top:50px;">
+      <div class="process-step reveal"><div class="step-num">01</div><h3>Initial Enquiry</h3><p>Contact us by phone, WhatsApp or the online form. Tell us your site details, requirements and timeline.</p></div>
+      <div class="process-step reveal"><div class="step-num">02</div><h3>Risk Assessment</h3><p>We assess your site, risk profile and operational requirements to design the right solution.</p></div>
+      <div class="process-step reveal"><div class="step-num">03</div><h3>Clear Proposal</h3><p>We present a clear, transparent proposal including personnel, schedule, and costs — no surprises.</p></div>
+      <div class="process-step reveal"><div class="step-num">04</div><h3>Deployment</h3><p>Your SIA-licensed team arrives fully briefed and professionally presented on the agreed start date.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section theme-white">
+  <div class="container">
+    <div class="section-heading center-width">
+      <span class="tag-label">Security FAQ</span>
+      <h2>Common questions about our security services.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question"><span>Are your security guards SIA licensed?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. For all relevant guarding and door supervision roles, personnel hold the appropriate SIA (Security Industry Authority) licence. All staff also undergo right-to-work verification and role-specific training before deployment.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span>How quickly can you provide security cover?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Response times depend on location, role type and resource availability. For urgent cover, contact us by phone or WhatsApp for the fastest response. We aim to accommodate urgent requests and can often mobilise within 24–48 hours.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span>What is a key holding service?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>With key holding, authorised site keys are securely retained by our team. If an alarm is triggered, our response team attends the premises, checks the site and escalates the matter based on the situation and agreed client procedures.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span>Can you provide event security for large venues?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. We provide event security including crowd management, access control, ID checking and conflict de-escalation for corporate events, public events, concerts and licensed venues. We scale team size to suit the event risk profile.</p></div></div>
+      <div class="faq-item"><button class="faq-question"><span>How do you price security services?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Pricing is tailored to your requirements — based on the number of guards, hours of cover, site size, risk level and any specialist role requirements. Contact us for a free, detailed quote with no hidden charges.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section theme-gradient-cta">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-text-col"><h2>Protect your business with professional security services.</h2><p>Contact UK Defence Services today for a free, no-obligation security quote.</p></div>
+      <div class="cta-buttons-col">
+        <a class="btn btn-gold" href="contact.html">Get Free Quote</a>
+        <a class="btn btn-light" href="tel:03332248175"><span>📞</span> 0333 224 8175</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End of page-->
+
+
+   <!-- ===== START: Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="UK Defence Services Logo" class="footer-logo" />
+        <p> UK Defence Services Ltd provides professional security, cleaning, IT, and construction 
+          services across England. From manned guarding and CCTV to reliable cleaning, IT solutions, 
+          and on-site support, we keep your business safe, efficient, and professionally maintained.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:03332248175">0333 224 8175</a></li>
+          <li><a href="mailto:enquiries@ukdefenceservices.co.uk">enquiries@ukdefenceservices.co.uk</a></li>
+          <li>Acorn Business Centre, Fountain Street North, Bury, Lancashire, BL9 7AN</li>
+        </ul>
+
+        <a href="contact.html" class="footer-cta">Get Free Quote</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="footer-socials">
+
+<a href="https://www.facebook.com/profile.php?id=61570883460494&locale=en_GB" class="social-chip">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="https://www.instagram.com/uk.defence.services.ltd/" class="social-chip">
+<i class="fa-brands fa-instagram"></i>
+Instagram
+</a>
+
+<a href="https://www.linkedin.com/company/108070191/admin/dashboard/" class="social-chip">
+<i class="fa-brands fa-linkedin-in"></i>
+LinkedIn
+</a>
+
+<!-- ===== <a href="#" class="social-chip">
+<i class="fa-brands fa-youtube"></i>
+YouTube
+</a> ===== -->
+
+
+<a href="https://www.tiktok.com/@uk.defence.services.ltd" class="social-chip">
+<i class="fa-brands fa-tiktok"></i>
+TikTok
+</a>
+<br>
+<!-- =====<a href="#" class="social-chip">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a> ===== -->
+
+</div>
+
+        
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">UK Defence Services LTD | 
+      Registered in England and Wales, Company No: 16088343,  VAT Registration No : 496 9058 29
+        <br>© 2026 UK Defence Services. All rights reserved.</div>
+  </footer>
+  <!-- ===== END: Footer ===== -->
+
+  <!-- ===== START: Floating CTA Buttons ===== -->
+  <div class="floating-cta-stack">
+    <a href="tel:03332248175" class="float-btn call">📞</a>
+    <a href="https://wa.me/447380738256" class="float-btn whatsapp">💬</a>
+  </div>
+  <!-- ===== END: Floating CTA Buttons ===== -->
+
+ 
+
+  <!-- cookies-->
+
+ <div id="cookie-banner" class="cookie-banner">
+  
+  <p class="cookie-text">
+    We use cookies to improve your experience.
+    <a href="cookie-policy.html">Learn more</a>
+  </p>
+
+  <div class="cookie-actions">
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="rejectCookies()">Reject</button>
+  </div>
+
+</div>
+
+ <!-- End cookies-->
+
+  <script src="script.js"></script>
+  <script src="cookie.js"></script>
+
+   <script>
+  // Auto-active Services trigger on sub-pages
+  const servicePages = [
+    'security.html', 'cleaning.html', 'construction.html',
+    'hospitality.html', 'it-services.html', 'services.html'
+  ];
+  const currentPage = window.location.pathname.split('/').pop();
+  if (servicePages.includes(currentPage)) {
+    const trigger = document.querySelector('.mega-trigger');
+    if (trigger) trigger.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

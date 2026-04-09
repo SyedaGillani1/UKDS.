@@ -1,0 +1,409 @@
+
+
+<!-- ========================= FILE: contact.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Defence Services | Security · IT · Construction · Hospitality</title>
+  <meta name="description" content="UK Defence Services provides professional security and cleaning services across the UK for offices, construction sites, retail premises, events and commercial properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cookie.css">
+  <link rel="stylesheet" href="hamburger-fix.css">
+  
+
+ 
+</head>
+
+<body class="has-custom-cursor">
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+  <!-- ===== START: Top Bar ===== -->
+   <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+
+        <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+          <a href="tel:03332248175" style="color: #1a0e00; text-decoration: none;">
+            📞 0333 224 8175 </a>
+        </span>
+
+        
+      <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+         <a href="mailto:enquiries@ukdefenceservices.co.uk" style="color: #1a0e00; text-decoration: none;">
+           📧 enquiries@ukdefenceservices.co.uk </a>
+      </span>
+
+      </div>
+       <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">From £16/hr + VAT</span>
+     
+    </div>
+  </div>
+  <!-- ===== END: Top Bar ===== -->
+
+  <!-- ===== START: Header / Navigation ===== -->
+  
+
+  <!-- ===== START: Header / Navigation ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="UK Defence Services Logo" class="brand-logo-img" />
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" >Home</a>
+      <a href="about.html" >About</a>
+
+      <div class="mega-menu">
+         <span class="mega-trigger">Services ▾</span>
+        <div class="mega-content">
+          <div class="mega-column">
+            <h4>Security</h4>
+            <a href="security.html">🛡 Security Services</a>
+            <p>Manned guarding, patrols, CCTV and event security.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Cleaning</h4>
+            <a href="cleaning.html">🧹 Cleaning Services</a>
+            <p>Commercial, office and deep cleaning for all premises.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Construction</h4>
+            <a href="construction.html">🏗 Construction Services</a>
+            <p>Labour supply, site support and skilled trades.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Hospitality</h4>
+            <a href="hospitality.html">🍽 Hospitality Staffing</a>
+            <p>Front-of-house and event hospitality staff.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Technology</h4>
+            <a href="it-services.html">💻 IT &amp; Digital</a>
+            <p>Web development, SaaS and digital marketing.</p>
+          </div>
+          <div class="mega-column">
+            <h4>All Services</h4>
+            <a href="services.html">📋 View All Services</a>
+            <p>See our full range of professional services.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-icon whatsapp-btn" href="https://wa.me/447380738256">
+        <span>💬</span> WhatsApp
+      </a>
+      <a class="btn btn-gold" href="contact.html">Get Quote</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  </div>
+</header>
+<!-- ===== END: Header / Navigation ===== -->
+
+
+
+
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="index.html" class="mnav-link">Home</a>
+  <a href="about.html" class="mnav-link">About</a>
+
+  <div class="mnav-services-trigger" id="svcTrigger" onclick="toggleMobileServices()">
+    <span>Services</span>
+    <span class="mnav-chevron" id="svcChevron"></span>
+  </div>
+
+  <div class="mnav-sub-drawer" id="svcDrawer">
+    <a href="security.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🛡</span> Security Services
+    </a>
+    <a href="cleaning.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🧹</span> Cleaning Services
+    </a>
+    <a href="construction.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🏗</span> Construction
+    </a>
+    <a href="hospitality.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🍽</span> Hospitality
+    </a>
+    <a href="it-services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">💻</span> IT &amp; Digital
+    </a>
+    <a href="services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">📋</span> All Services
+    </a>
+  </div>
+
+  <a href="contact.html" class="mnav-link">Contact</a>
+
+</div>
+<!-- ===== END: MOBILE NAV ===== -->
+  <!-- ===== END: Header / Navigation ===== -->
+
+
+
+
+<!-- change here of every page-->
+
+
+  <!-- ===== START: Page Hero ===== -->
+
+ <section class="page-hero" style="background-image:linear-gradient(90deg, rgba(7,18,38,.82), rgba(7,18,38,.42)), 
+ url('contact1-hero.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; ">
+
+<!-- veritcal line on left--> 
+<div class="vach__deco-line" aria-hidden="true"></div>
+ 
+ <div class="container ">
+  <div class="hero-tag"><span class="eyebrow"></span>Contact UK Defence Services</div>
+
+
+<h1 class="gl__hero-title">
+  Reliable Services.<br>
+  Direct <span>Communication.</span><br>
+  Real Results.
+</h1>
+
+  <p class="gl__hero-desc">
+    Whether you need security officers, cleaning teams, construction support, IT services or hospitality staff — we're ready to help.
+  </p>
+    <div style="margin-top: 20px; margin-bottom: 25px; display: inline-flex; align-items: center; gap: 14px; background: rgba(200,162,39,0.12); 
+    border: 2px solid #c8a227; border-radius: 12px; padding: 12px 20px;">
+  <div style="font-size: 28px; font-weight: 700; color: #c8a227;">£16<span style="font-size: 16px;">/hr</span></div>
+  <div>
+    <div style="color: #ffffff; font-size: 13px; font-weight: 600;">Competitive hourly rate</div>
+    <div style="color: #aaaaaa; font-size: 11px;">+ VAT &nbsp;|&nbsp; Across the UK</div>
+  </div>
+</div>
+<br>
+   <!-- Stats row — matches screenshot -->
+    <div class="vach__stats">
+      <div class="vach__stat">
+        <div class="vach__stat-num">4hr</div>
+        <div class="vach__stat-label">Response Time</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">Free</div>
+        <div class="vach__stat-label">Consultation</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">UK</div>
+        <div class="vach__stat-label">Coverage</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">0333</div>
+        <div class="vach__stat-label">224 8175</div>
+      </div>
+    </div>
+  
+  
+</div>
+
+  <!-- Scroll indicator -->
+  <div class="vach__scroll" aria-hidden="true">
+    <div class="vach__scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+
+
+
+    <!-- ===== END: Page Hero ===== -->
+
+ 
+  <!-- ===== START: Contact Layout ===== -->
+  <section class="section theme-dark contact-section-advanced">
+    <div class="container contact-grid-advanced">
+      <div>
+        <div class="section-heading light"><span class="tag-label dark-tag">Speak With Us</span>
+          <h2>Fast ways to contact our team.</h2><p>Designed with subtle styling so the section feels premium rather than heavy.</p></div>
+        <div class="contact-link-stack">
+          <a class="contact-info-card" href="tel:03332248175"><span>📞</span><div><strong>Call Us</strong><small>0333 224 8175</small></div></a>
+          <a class="contact-info-card" href="https://wa.me/447380738256"><span>💬</span><div><strong>WhatsApp</strong><small>+44 7380 738256</small></div></a>
+          <a class="contact-info-card" href="mailto:enquiries@ukdefenceservices.co.uk"><span>✉</span><div><strong>Email</strong><small>enquiries@ukdefenceservices.co.uk</small></div></a>
+        </div>
+      </div>
+
+      <div class="contact-form-shell">
+        <div class="security-figure-decor"></div>
+        <form class="contact-form-card">
+          <span class="mini-tag white-mini">Request a Quote</span>
+          <h3>Tell us what you need</h3>
+          <div class="form-grid">
+            <input type="text" placeholder="Full name" />
+            <input type="text" placeholder="Phone number" />
+            <input type="email" placeholder="Email address" class="full" />
+            <select class="full"><option>Select a service</option><option>Security Services</option><option>Cleaning Services</option><option>Both Security & Cleaning</option><option>Job Enquiry</option></select>
+            <textarea rows="5" placeholder="Message" class="full"></textarea>
+            <button type="button" class="btn btn-primary full">Send Enquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="map-shell">
+        <div class="map-header">Google Map Location</div>
+        <iframe title="UK Defence Services Map" src="https://www.google.com/maps?q=Acorn%20Business%20Centre%2C%20Fountain%20Street%20North%2C%20Bury%2C%20Lancashire%2C%20BL9%207AN&z=14&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- ===== END: Contact Layout ===== -->
+
+<!-- End of change here of every page-->
+
+   <!-- ===== START: Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="UK Defence Services Logo" class="footer-logo" />
+        <p> UK Defence Services Ltd provides professional security, cleaning, IT, and construction 
+          services across England. From manned guarding and CCTV to reliable cleaning, IT solutions, 
+          and on-site support, we keep your business safe, efficient, and professionally maintained.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:03332248175">0333 224 8175</a></li>
+          <li><a href="mailto:enquiries@ukdefenceservices.co.uk">enquiries@ukdefenceservices.co.uk</a></li>
+          <li>Acorn Business Centre, Fountain Street North, Bury, Lancashire, BL9 7AN</li>
+        </ul>
+
+        <a href="contact.html" class="footer-cta">Get Free Quote</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="footer-socials">
+
+<a href="https://www.facebook.com/profile.php?id=61570883460494&locale=en_GB" class="social-chip">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="https://www.instagram.com/uk.defence.services.ltd/" class="social-chip">
+<i class="fa-brands fa-instagram"></i>
+Instagram
+</a>
+
+<a href="https://www.linkedin.com/company/108070191/admin/dashboard/" class="social-chip">
+<i class="fa-brands fa-linkedin-in"></i>
+LinkedIn
+</a>
+
+<!-- ===== <a href="#" class="social-chip">
+<i class="fa-brands fa-youtube"></i>
+YouTube
+</a> ===== -->
+
+
+<a href="https://www.tiktok.com/@uk.defence.services.ltd" class="social-chip">
+<i class="fa-brands fa-tiktok"></i>
+TikTok
+</a>
+<br>
+<!-- =====<a href="#" class="social-chip">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a> ===== -->
+
+</div>
+
+        
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">UK Defence Services LTD | 
+      Registered in England and Wales, Company No: 16088343,  VAT Registration No : 496 9058 29
+        <br>© 2026 UK Defence Services. All rights reserved.</div>
+  </footer>
+  <!-- ===== END: Footer ===== -->
+
+  <!-- ===== START: Floating CTA Buttons ===== -->
+  <div class="floating-cta-stack">
+    <a href="tel:03332248175" class="float-btn call">📞</a>
+    <a href="https://wa.me/447380738256" class="float-btn whatsapp">💬</a>
+  </div>
+  <!-- ===== END: Floating CTA Buttons ===== -->
+
+
+
+  
+  <script src="script.js"></script>
+  <script src="cookie.js"></script>
+
+   <!-- cookies-->
+
+ <div id="cookie-banner" class="cookie-banner">
+  
+  <p class="cookie-text">
+    We use cookies to improve your experience.
+    <a href="cookie-policy.html">Learn more</a>
+  </p>
+
+  <div class="cookie-actions">
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="rejectCookies()">Reject</button>
+  </div>
+
+</div>
+
+ <!-- End cookies-->
+
+ <script>
+  // Auto-active Services trigger on sub-pages
+  const servicePages = [
+    'security.html', 'cleaning.html', 'construction.html',
+    'hospitality.html', 'it-services.html', 'services.html'
+  ];
+  const currentPage = window.location.pathname.split('/').pop();
+  if (servicePages.includes(currentPage)) {
+    const trigger = document.querySelector('.mega-trigger');
+    if (trigger) trigger.classList.add('active');
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

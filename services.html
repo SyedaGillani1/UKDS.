@@ -1,0 +1,554 @@
+
+
+<!-- ========================= FILE: index.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Defence Services | Security · IT · Construction · Hospitality</title>
+  <meta name="description" content="UK Defence Services provides professional security and cleaning services across the UK for offices, construction sites, retail premises, events and commercial properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+ 
+  <link rel="stylesheet" href="cookie.css">
+  <link rel="stylesheet" href="hamburger-fix.css">
+
+
+
+
+</head>
+
+<body class="has-custom-cursor">
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+  <!-- ===== START: Top Bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+
+        <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+          <a href="tel:03332248175" style="color: #1a0e00; text-decoration: none;">
+            📞 0333 224 8175 </a>
+        </span>
+
+        
+      <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+         <a href="mailto:enquiries@ukdefenceservices.co.uk" style="color: #1a0e00; text-decoration: none;">
+           📧 enquiries@ukdefenceservices.co.uk </a>
+      </span>
+
+      </div>
+       <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">From £16/hr + VAT</span>
+     
+    </div>
+  </div>
+  <!-- ===== END: Top Bar ===== -->
+
+  <!-- ===== START: Header / Navigation ===== -->
+  <!-- ===== START: Header / Navigation ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="UK Defence Services Logo" class="brand-logo-img" />
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" >Home</a>
+      <a href="about.html" >About</a>
+
+      <div class="mega-menu">
+        <span class="mega-trigger">Services ▾</span>
+      
+        <div class="mega-content">
+          <div class="mega-column">
+            <h4>Security</h4>
+            <a href="security.html">🛡 Security Services</a>
+            <p>Manned guarding, patrols, CCTV and event security.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Cleaning</h4>
+            <a href="cleaning.html">🧹 Cleaning Services</a>
+            <p>Commercial, office and deep cleaning for all premises.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Construction</h4>
+            <a href="construction.html">🏗 Construction Services</a>
+            <p>Labour supply, site support and skilled trades.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Hospitality</h4>
+            <a href="hospitality.html">🍽 Hospitality Staffing</a>
+            <p>Front-of-house and event hospitality staff.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Technology</h4>
+            <a href="it-services.html">💻 IT &amp; Digital</a>
+            <p>Web development, SaaS and digital marketing.</p>
+          </div>
+          <div class="mega-column">
+            <h4>All Services</h4>
+            <a href="services.html">📋 View All Services</a>
+            <p>See our full range of professional services.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-icon whatsapp-btn" href="https://wa.me/447380738256">
+        <span>💬</span> WhatsApp
+      </a>
+      <a class="btn btn-gold" href="contact.html">Get Quote</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  </div>
+</header>
+<!-- ===== END: Header / Navigation ===== -->
+
+
+<!-- ===== MOBILE NAV — outside header so position:fixed works correctly ===== -->
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="index.html" class="mnav-link">Home</a>
+  <a href="about.html" class="mnav-link">About</a>
+
+  <div class="mnav-services-trigger" id="svcTrigger" onclick="toggleMobileServices()">
+    <span>Services</span>
+    <span class="mnav-chevron" id="svcChevron"></span>
+  </div>
+
+  <div class="mnav-sub-drawer" id="svcDrawer">
+    <a href="security.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🛡</span> Security Services
+    </a>
+    <a href="cleaning.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🧹</span> Cleaning Services
+    </a>
+    <a href="construction.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🏗</span> Construction
+    </a>
+    <a href="hospitality.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🍽</span> Hospitality
+    </a>
+    <a href="it-services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">💻</span> IT &amp; Digital
+    </a>
+    <a href="services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">📋</span> All Services
+    </a>
+  </div>
+
+  <a href="contact.html" class="mnav-link">Contact</a>
+
+</div>
+<!-- ===== END: MOBILE NAV ===== -->
+  <!-- ===== END: Header / Navigation ===== -->
+
+ 
+<!--    Hero Section -->
+
+ <section class="page-hero" style="background-image:linear-gradient(90deg, rgba(7,18,38,.82), rgba(7,18,38,.42)), 
+ url('Security.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; ">
+
+<!-- veritcal line on left--> 
+<div class="vach__deco-line" aria-hidden="true"></div>
+ 
+ <div class="container ">
+  <div class="hero-tag"><span class="eyebrow"></span>Security UK Defence Services</div>
+
+
+<h1 class="gl__hero-title">
+  Five Devision<br>
+  <span>One Trusted Partner.</span><br>
+</h1>
+
+ <p class="gl__hero-desc">
+    UK Defence Services operates across five professional disciplines — delivering every service to the same premium standard, under one roof.
+  </p>
+
+    <div style="margin-top: 20px; margin-bottom: 25px; display: inline-flex; align-items: center; gap: 14px; background: rgba(200,162,39,0.12); 
+    border: 2px solid #c8a227; border-radius: 12px; padding: 12px 20px;">
+  <div style="font-size: 28px; font-weight: 700; color: #c8a227;">£16<span style="font-size: 16px;">/hr</span></div>
+  <div>
+    <div style="color: #ffffff; font-size: 13px; font-weight: 600;">Competitive hourly rate</div>
+    <div style="color: #aaaaaa; font-size: 11px;">+ VAT &nbsp;|&nbsp; Across the UK</div>
+  </div>
+</div>
+<br>
+   <!-- Stats row — matches screenshot -->
+    <div class="vach__stats">
+      <div class="vach__stat">
+        <div class="vach__stat-num">24/7</div>
+        <div class="vach__stat-label">Availbility</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">SIA</div>
+        <div class="vach__stat-label">Licensed officers</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">100%</div>
+        <div class="vach__stat-label">DBS checked</div>
+      </div>
+     
+    </div>
+  
+  
+</div>
+
+  <!-- Scroll indicator -->
+  <div class="vach__scroll" aria-hidden="true">
+    <div class="vach__scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+
+
+<!-- End Hero Section-->
+
+  <!-- ===== START: Services Page Content ===== -->
+
+<!-- SERVICES TAB SECTION -->
+<section class="section theme-dark" style="padding-top:70px;">
+  <div class="container">
+
+    <!-- Tab Navigation -->
+    <div class="services-tab-nav">
+      <button class="srv-tab-btn active" data-tab="srv-security">🛡 Security</button>
+      <button class="srv-tab-btn" data-tab="srv-cleaning">🧹 Cleaning</button>
+      <button class="srv-tab-btn" data-tab="srv-construction">🏗 Construction</button>
+      <button class="srv-tab-btn" data-tab="srv-it">💻 IT &amp; Digital</button>
+      <button class="srv-tab-btn" data-tab="srv-hospitality">🍽 Hospitality</button>
+    </div>
+
+    <!-- Security Panel -->
+    <div class="srv-content active" id="srv-security">
+      <div class="srv-layout">
+        <div class="srv-text">
+          <span class="tag-label dark-tag">Security Services</span>
+          <h2>Professional protection for every environment.</h2>
+          <p>Our SIA-licensed security team provides manned guarding, mobile patrols, CCTV monitoring and event security for commercial clients across the UK. Every operative is vetted, trained and presented to the highest standard.</p>
+          <ul class="srv-features">
+            <li>Manned guarding &amp; site officers</li>
+            <li>Mobile patrol &amp; key holding</li>
+            <li>CCTV monitoring &amp; support</li>
+            <li>Door supervision (SIA licensed)</li>
+            <li>Event security &amp; crowd management</li>
+            <li>Alarm response &amp; emergency cover</li>
+          </ul>
+          <a href="security.html" class="btn btn-gold">Full Security Details →</a>
+        </div>
+        <div class="srv-image">
+          <img src="SP-securitySection.png" alt="Security Services" />
+        </div>
+      </div>
+      <div class="srv-cards-grid" style="margin-top:60px;">
+        <div class="srv-card"><div class="srv-card-icon">🛡</div><h3>Manned Guarding</h3><p>Professionally trained on-site security officers providing constant protection and access control.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🚗</div><h3>Mobile Patrols</h3><p>Regular patrol visits providing visible deterrence across your site at agreed intervals.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">📹</div><h3>CCTV Support</h3><p>CCTV monitoring and management, integrated with your existing or new systems.</p></div>
+      </div>
+    </div>
+
+    <!-- Cleaning Panel -->
+    <div class="srv-content" id="srv-cleaning">
+      <div class="srv-layout">
+        <div class="srv-text">
+          <span class="tag-label dark-tag">Cleaning Services</span>
+          <h2>Immaculate standards. Consistent delivery.</h2>
+          <p>Our commercial cleaning teams deliver office cleaning, deep cleaning and specialist cleaning services for businesses that demand a spotless, professionally maintained environment — every single day.</p>
+          <ul class="srv-features">
+            <li>Daily office &amp; commercial cleaning</li>
+            <li>Deep cleaning &amp; sanitisation</li>
+            <li>End-of-tenancy cleaning</li>
+            <li>Post-construction clean-up</li>
+            <li>Window &amp; façade cleaning</li>
+            <li>Flexible scheduling — daily, weekly, or one-off</li>
+          </ul>
+          <a href="cleaning.html" class="btn btn-gold">Full Cleaning Details →</a>
+        </div>
+        <div class="srv-image">
+          <img src="cleaning.png" alt="Cleaning Services" />
+        </div>
+      </div>
+      <div class="srv-cards-grid" style="margin-top:60px;">
+        <div class="srv-card"><div class="srv-card-icon">🧹</div><h3>Office Cleaning</h3><p>Regular daily or weekly cleaning for offices, receptions, kitchens and communal areas.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🔬</div><h3>Deep Cleaning</h3><p>Thorough deep cleaning and sanitisation for commercial premises to the highest hygiene standards.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🏗</div><h3>Post-Construction</h3><p>Specialist builders clean following construction or renovation work, ready for occupation.</p></div>
+      </div>
+    </div>
+
+    <!-- Construction Panel -->
+    <div class="srv-content" id="srv-construction">
+      <div class="srv-layout">
+        <div class="srv-text">
+          <span class="tag-label dark-tag">Construction Services</span>
+          <h2>Reliable site support. Professional workforce.</h2>
+          <p>We supply skilled and general labour to construction projects across the UK, providing dependable workforce solutions that keep sites running safely, efficiently and on schedule.</p>
+          <ul class="srv-features">
+            <li>Skilled &amp; general labour supply</li>
+            <li>Site support &amp; operational assistance</li>
+            <li>Plumbing installations &amp; repairs</li>
+            <li>Electrical wiring &amp; inspections</li>
+            <li>Painting &amp; decorating</li>
+            <li>Groundwork &amp; general building works</li>
+          </ul>
+          <a href="construction.html" class="btn btn-gold">Full Construction Details →</a>
+        </div>
+        <div class="srv-image">
+          <img src="Construction.png" alt="Construction Services" />
+        </div>
+      </div>
+      <div class="srv-cards-grid" style="margin-top:60px;">
+        <div class="srv-card"><div class="srv-card-icon">👷</div><h3>Labour Supply</h3><p>Skilled and general labour for construction sites, provided quickly and reliably.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🔧</div><h3>Trades Services</h3><p>Plumbing, electrical and decorating services delivered by qualified tradespeople.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">⚙️</div><h3>Site Operations</h3><p>Operational support to keep your project running on time and within budget.</p></div>
+      </div>
+    </div>
+
+    <!-- IT Panel -->
+    <div class="srv-content" id="srv-it">
+      <div class="srv-layout">
+        <div class="srv-text">
+          <span class="tag-label dark-tag">IT &amp; Digital Services</span>
+          <h2>Smart digital solutions built for business growth.</h2>
+          <p>From custom web development and SaaS solutions to social media marketing and graphic design, our digital team helps businesses build a strong, profitable online presence.</p>
+          <ul class="srv-features">
+            <li>Custom website design &amp; development</li>
+            <li>SaaS &amp; business software solutions</li>
+            <li>SEO &amp; pay-per-click advertising</li>
+            <li>Social media marketing &amp; management</li>
+            <li>Graphic design &amp; brand identity</li>
+            <li>IT support &amp; maintenance</li>
+          </ul>
+          <a href="it-services.html" class="btn btn-gold">Full IT Services Details →</a>
+        </div>
+        <div class="srv-image">
+          <img src="IT.png" alt="IT Services" />
+        </div>
+      </div>
+      <div class="srv-cards-grid" style="margin-top:60px;">
+        <div class="srv-card"><div class="srv-card-icon">🌐</div><h3>Web Development</h3><p>Modern, fast websites and web applications built to convert visitors into clients.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">📈</div><h3>Digital Marketing</h3><p>SEO, PPC and social media strategies that deliver measurable growth.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🎨</div><h3>Design &amp; Brand</h3><p>Professional graphic design, logos and brand identity that makes your business stand out.</p></div>
+      </div>
+    </div>
+
+    <!-- Hospitality Panel -->
+    <div class="srv-content" id="srv-hospitality">
+      <div class="srv-layout">
+        <div class="srv-text">
+          <span class="tag-label dark-tag">Hospitality Staffing</span>
+          <h2>Trained. Presented. Ready to impress.</h2>
+          <p>We provide professional front-of-house staff, waitressing teams and event hospitality personnel for businesses, venues and events that demand the very best presentation and service.</p>
+          <ul class="srv-features">
+            <li>Waitressing &amp; front-of-house staff</li>
+            <li>Event catering &amp; hospitality support</li>
+            <li>Hotel &amp; venue cleaning teams</li>
+            <li>Bar staff &amp; event support</li>
+            <li>Flexible contract &amp; ad-hoc staffing</li>
+            <li>Fully trained, vetted and uniformed staff</li>
+          </ul>
+          <a href="hospitality.html" class="btn btn-gold">Full Hospitality Details →</a>
+        </div>
+        <div class="srv-image">
+          <img src="SP-hospitalitySection.png" alt="Hospitality Staffing" />
+        </div>
+      </div>
+      <div class="srv-cards-grid" style="margin-top:60px;">
+        <div class="srv-card"><div class="srv-card-icon">🍽</div><h3>Waitressing Staff</h3><p>Professionally trained and presented waiting staff for restaurants, hotels and events.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🎪</div><h3>Event Hospitality</h3><p>Front-of-house event teams for corporate events, galas and hospitality functions.</p></div>
+        <div class="srv-card"><div class="srv-card-icon">🏨</div><h3>Hotel &amp; Venue</h3><p>Cleaning and housekeeping teams for hotels, conference centres and venues.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section theme-soft-blue">
+  <div class="container">
+    <div class="section-heading center-align">
+      <span class="tag-label">Why Choose Us</span>
+      <h2>The advantages of a single trusted multi-service partner.</h2>
+    </div>
+    <div class="icon-card-grid four-col" style="margin-top:50px;">
+      <div class="icon-card reveal"><div class="icon-bubble">🏅</div><h3>Accredited &amp; Licensed</h3><p>SIA licensed security, fully insured and compliant with all relevant UK regulations.</p></div>
+      <div class="icon-card reveal"><div class="icon-bubble">⚡</div><h3>Rapid Mobilisation</h3><p>Fast deployment across all five service divisions when you need support quickly.</p></div>
+      <div class="icon-card reveal"><div class="icon-bubble">🎯</div><h3>Bespoke Solutions</h3><p>Every service package is tailored specifically to your site, budget and requirements.</p></div>
+      <div class="icon-card reveal"><div class="icon-bubble">🤝</div><h3>Single Point of Contact</h3><p>One account manager, one invoice, one relationship — regardless of which services you use.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section theme-gradient-cta">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-text-col">
+        <h2>Ready to discuss your service requirements?</h2>
+        <p>Get in touch for a free, no-obligation quote tailored to your exact business needs.</p>
+      </div>
+      <div class="cta-buttons-col">
+        <a class="btn btn-gold" href="contact.html">Get Free Quote</a>
+        <a class="btn btn-light" href="tel:03332248175"><span>📞</span> 0333 224 8175</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End of page-->
+
+
+   <!-- ===== START: Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="UK Defence Services Logo" class="footer-logo" />
+        <p> UK Defence Services Ltd provides professional security, cleaning, IT, and construction 
+          services across England. From manned guarding and CCTV to reliable cleaning, IT solutions, 
+          and on-site support, we keep your business safe, efficient, and professionally maintained.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:03332248175">0333 224 8175</a></li>
+          <li><a href="mailto:enquiries@ukdefenceservices.co.uk">enquiries@ukdefenceservices.co.uk</a></li>
+          <li>Acorn Business Centre, Fountain Street North, Bury, Lancashire, BL9 7AN</li>
+        </ul>
+
+        <a href="contact.html" class="footer-cta">Get Free Quote</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="footer-socials">
+
+<a href="https://www.facebook.com/profile.php?id=61570883460494&locale=en_GB" class="social-chip">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="https://www.instagram.com/uk.defence.services.ltd/" class="social-chip">
+<i class="fa-brands fa-instagram"></i>
+Instagram
+</a>
+
+<a href="https://www.linkedin.com/company/108070191/admin/dashboard/" class="social-chip">
+<i class="fa-brands fa-linkedin-in"></i>
+LinkedIn
+</a>
+
+<!-- ===== <a href="#" class="social-chip">
+<i class="fa-brands fa-youtube"></i>
+YouTube
+</a> ===== -->
+
+
+<a href="https://www.tiktok.com/@uk.defence.services.ltd" class="social-chip">
+<i class="fa-brands fa-tiktok"></i>
+TikTok
+</a>
+<br>
+<!-- =====<a href="#" class="social-chip">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a> ===== -->
+
+</div>
+
+        
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">UK Defence Services LTD | 
+      Registered in England and Wales, Company No: 16088343,  VAT Registration No : 496 9058 29
+        <br>© 2026 UK Defence Services. All rights reserved.</div>
+  </footer>
+  <!-- ===== END: Footer ===== -->
+
+  <!-- ===== START: Floating CTA Buttons ===== -->
+  <div class="floating-cta-stack">
+    <a href="tel:03332248175" class="float-btn call">📞</a>
+    <a href="https://wa.me/447380738256" class="float-btn whatsapp">💬</a>
+  </div>
+  <!-- ===== END: Floating CTA Buttons ===== -->
+
+
+
+ <!-- cookies-->
+
+ <div id="cookie-banner" class="cookie-banner">
+  
+  <p class="cookie-text">
+    We use cookies to improve your experience.
+    <a href="cookie-policy.html">Learn more</a>
+  </p>
+
+  <div class="cookie-actions">
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="rejectCookies()">Reject</button>
+  </div>
+
+</div>
+
+ <!-- End cookies-->
+
+  <script src="script.js"></script>
+  <script src="cookie.js"></script>
+
+
+ <script>
+  // Auto-active Services trigger on sub-pages
+  const servicePages = [
+    'security.html', 'cleaning.html', 'construction.html',
+    'hospitality.html', 'it-services.html', 'services.html'
+  ];
+  const currentPage = window.location.pathname.split('/').pop();
+  if (servicePages.includes(currentPage)) {
+    const trigger = document.querySelector('.mega-trigger');
+    if (trigger) trigger.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

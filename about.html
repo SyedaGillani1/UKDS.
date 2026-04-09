@@ -1,0 +1,546 @@
+<!-- ========================= FILE: index.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Defence Services | Security · IT · Construction · Hospitality</title>
+  <meta name="description" content="UK Defence Services provides professional security and cleaning services across the UK for offices, construction sites, retail premises, events and commercial properties." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="cookie.css">
+  <link rel="stylesheet" href="hamburger-fix.css">
+  
+
+
+</head>
+
+<body class="has-custom-cursor">
+<div class="cursor-ring"></div>
+<div class="cursor-dot"></div>
+
+  <!-- ===== START: Top Bar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+          <a href="tel:03332248175" style="color: #1a0e00; text-decoration: none;">
+            📞 0333 224 8175 </a>
+        </span>
+
+        
+      <span style="background: #c8a227; color: #1a0e00; font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 20px;">
+         <a href="mailto:enquiries@ukdefenceservices.co.uk" style="color: #1a0e00; text-decoration: none;">
+           📧 enquiries@ukdefenceservices.co.uk </a>
+      </span>
+      </div>
+      <div class="topbar-right">Professional Workforce & Infrastructure Services Across the UK</div>
+    </div>
+  </div>
+  <!-- ===== END: Top Bar ===== -->
+
+  <!-- ===== START: Header / Navigation ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="UK Defence Services Logo" class="brand-logo-img" />
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" >Home</a>
+      <a href="about.html" class="active">About</a>
+
+      <div class="mega-menu">
+        <a href="services.html" class="mega-trigger">Services ▾</a>
+        <div class="mega-content">
+          <div class="mega-column">
+            <h4>Security</h4>
+            <a href="security.html">🛡 Security Services</a>
+            <p>Manned guarding, patrols, CCTV and event security.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Cleaning</h4>
+            <a href="cleaning.html">🧹 Cleaning Services</a>
+            <p>Commercial, office and deep cleaning for all premises.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Construction</h4>
+            <a href="construction.html">🏗 Construction Services</a>
+            <p>Labour supply, site support and skilled trades.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Hospitality</h4>
+            <a href="hospitality.html">🍽 Hospitality Staffing</a>
+            <p>Front-of-house and event hospitality staff.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Technology</h4>
+            <a href="it-services.html">💻 IT &amp; Digital</a>
+            <p>Web development, SaaS and digital marketing.</p>
+          </div>
+          <div class="mega-column">
+            <h4>All Services</h4>
+            <a href="services.html">📋 View All Services</a>
+            <p>See our full range of professional services.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-icon whatsapp-btn" href="https://wa.me/447380738256">
+        <span>💬</span> WhatsApp
+      </a>
+      <a class="btn btn-gold" href="contact.html">Get Quote</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  </div>
+</header>
+<!-- ===== END: Header / Navigation ===== -->
+
+
+<!-- ===== MOBILE NAV — outside header so position:fixed works correctly ===== -->
+<div class="mobile-nav" id="mobileNav">
+
+  <a href="index.html" class="mnav-link">Home</a>
+  <a href="about.html" class="mnav-link">About</a>
+
+  <div class="mnav-services-trigger" id="svcTrigger" onclick="toggleMobileServices()">
+    <span>Services</span>
+    <span class="mnav-chevron" id="svcChevron"></span>
+  </div>
+
+  <div class="mnav-sub-drawer" id="svcDrawer">
+    <a href="security.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🛡</span> Security Services
+    </a>
+    <a href="cleaning.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🧹</span> Cleaning Services
+    </a>
+    <a href="construction.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🏗</span> Construction
+    </a>
+    <a href="hospitality.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">🍽</span> Hospitality
+    </a>
+    <a href="it-services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">💻</span> IT &amp; Digital
+    </a>
+    <a href="services.html" class="mnav-sub-item">
+      <span class="mnav-sub-icon">📋</span> All Services
+    </a>
+  </div>
+
+  <a href="contact.html" class="mnav-link">Contact</a>
+
+</div>
+<!-- ===== END: MOBILE NAV ===== -->
+  <!-- ===== END: Header / Navigation ===== -->
+
+
+
+<!-- Every page chang here-->
+ 
+<!--    Hero Section -->
+ <section class="page-hero" style="background-image:linear-gradient(90deg, rgba(7,18,38,.82), rgba(7,18,38,.42)), 
+ url('UKDS-About-hero.png'); background-size: cover; background-position: right center; background-repeat: no-repeat; ">
+
+<!-- veritcal line on left--> 
+<div class="vach__deco-line" aria-hidden="true"></div>
+ 
+ <div class="container ">
+  <div class="hero-tag"><span class="eyebrow"></span>About UK Defence Services</div>
+
+<h1 class="gl__hero-title">
+   Trusted by those 
+    <span>who protect.</span>
+    Built for those 
+    <span>who serve.</span>
+</h1>
+
+ <p class="gl__hero-desc">
+     UK Defence Services on the ground — professional security, event guarding, construction labour, and specialist deployments 
+    captured in real moments across the UK.
+  </p>
+
+    <div style="margin-top: 20px; margin-bottom: 25px; display: inline-flex; align-items: center; gap: 14px; background: rgba(200,162,39,0.12); 
+    border: 2px solid #c8a227; border-radius: 12px; padding: 12px 20px;">
+  <div style="font-size: 28px; font-weight: 700; color: #c8a227;">£16<span style="font-size: 16px;">/hr</span></div>
+  <div>
+    <div style="color: #ffffff; font-size: 13px; font-weight: 600;">Competitive hourly rate</div>
+    <div style="color: #aaaaaa; font-size: 11px;">+ VAT &nbsp;|&nbsp; Across the UK</div>
+  </div>
+</div>
+<br>
+   <!-- Stats row — matches screenshot -->
+    <div class="vach__stats">
+      <div class="vach__stat">
+        <div class="vach__stat-num">SafeContractor</div>
+        <div class="vach__stat-label">Accredited</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">Fully insured</div>
+        <div class="vach__stat-label">Public liability</div>
+      </div>
+      <div class="vach__stat">
+        <div class="vach__stat-num">Multi-sector</div>
+        <div class="vach__stat-label">Experience</div>
+      </div>
+     
+    </div>
+  
+</div>
+
+  <!-- Scroll indicator -->
+  <div class="vach__scroll" aria-hidden="true">
+    <div class="vach__scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+
+
+<!-- End Hero Section-->
+
+  <!-- ===== START: About Content ===== -->
+
+  <!-- WHO WE ARE -->
+<section class="who">
+  <div class="who-left reveal">
+    <span class="tag-label">Who We Are</span>
+    <h2 class="who-h2">One partner for<br><span>security, cleaning</span><br>&amp; total site support.</h2>
+    <p class="who-p">UK Defence Services supports businesses that need visible professionalism, responsive communication and an elegant service experience across every site we operate.</p>
+    <p class="who-p">We bring together experienced teams across security, cleaning, hospitality, construction and digital solutions — all under a single, accountable partner.</p>
+
+    <div class="who-cards">
+      <div class="who-card">
+        <div class="who-card-tag">Mission</div>
+        <h4>Dependable Service</h4>
+        <p>Deliver dependable protection and high-quality cleaning that strengthens client confidence.</p>
+      </div>
+      <div class="who-card">
+        <div class="who-card-tag">Vision</div>
+        <h4>Recognised Brand</h4>
+        <p>Become the go-to UK name for integrated security and commercial excellence.</p>
+      </div>
+      <div class="who-card">
+        <div class="who-card-tag">Goal</div>
+        <h4>Client Confidence</h4>
+        <p>Help every client feel supported through strong communication and visible standards.</p>
+      </div>
+    </div>
+
+   <div class="who-btns">
+  <a href="contact.html" class="btn btn-primary" style="border-radius:50px; white-space:nowrap;">Get a Free Quote</a>
+  <a href="services.html" style="
+    display: inline-block;
+    border-radius: 50px;
+    white-space: nowrap;
+    padding: 12px 28px;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  ">Our Services</a>
+</div>
+  </div>
+
+  <div class="who-right reveal">
+    <div class="who-img-frame">
+      <img src="Aboupageshoweare.png" alt="UK Defence Services professional team" />
+      <div class="who-img-overlay"></div>
+      <div class="who-img-stats">
+        <div class="who-stat"><strong>24/7</strong><span>Support</span></div>
+        <div class="who-stat"><strong>UK</strong><span>Nationwide</span></div>
+        <div class="who-stat"><strong>5★</strong><span>Rated</span></div>
+      </div>
+      <div class="who-img-badge">
+        <span>🛡 Trusted &amp; Fully Accredited</span>
+        SIA Licensed · Safe Contractor · Fully Insured
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+<!-- ===== START: Approach  ===== -->
+<section class="approach">
+  <div class="container">
+    <div class="section-heading center-width reveal">
+      <span class="tag-label">Our Approach</span>
+      <h2 class="approach-h2">How we think about<br>service delivery.</h2>
+      <p class="approach-sub">Each step is designed to ensure precise, professional and consistent service delivery across every site we operate.</p>
+    </div>
+
+    <div class="approach-steps">
+      <div class="step-card reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon">🔍</div>
+        <h3>Understand the Site</h3>
+        <p>We review site needs, traffic, operational expectations and service priorities before proposing any solution, ensuring a precise and informed fit.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon">⚙️</div>
+        <h3>Tailor the Service</h3>
+        <p>We shape the right support level for security, cleaning or combined service requirements — building rotas, schedules and processes around your operations.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon">🛡</div>
+        <h3>Deliver Professionally</h3>
+        <p>Presentation, responsiveness and communication remain central throughout the contract. Our teams are uniformed, trained and accountable to agreed standards.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">04</div>
+        <div class="step-icon">📊</div>
+        <h3>Review &amp; Improve</h3>
+        <p>Regular site reviews, client feedback sessions and performance reporting ensure service standards are maintained and continuously raised.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">05</div>
+        <div class="step-icon">🤝</div>
+        <h3>Build Long-Term Partnerships</h3>
+        <p>We see every client relationship as a long-term partnership, not a transaction. Reliability and trust are the foundation of everything we do.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">06</div>
+        <div class="step-icon">📈</div>
+        <h3>Scale With Your Growth</h3>
+        <p>As your business expands, our services scale with you. New sites, increased requirements or additional divisions — we grow alongside your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- ===== END: Approach ===== -->
+
+
+<!-- VALUES -->
+<section class="values">
+  <div class="values-inner">
+    <div class="values-left reveal">
+      <span class="tag-label">Our Values</span>
+      
+      <h2 class="values-h2">Built on<br><em>Principles</em><br>That Don't<br>Waver.</h2>
+      <p class="values-p">Every team member, every site and every contract is governed by the same core values. They are non-negotiable and visible in everything we deliver.</p>
+    </div>
+    <div class="values-list reveal">
+      <div class="val-item">
+        <div class="val-dot">🎯</div>
+        <div>
+          <h4>Professionalism</h4>
+          <p>Uniformed, trained and accountable teams that represent your business as much as ours.</p>
+        </div>
+      </div>
+      <div class="val-item">
+        <div class="val-dot">🔒</div>
+        <div>
+          <h4>Integrity</h4>
+          <p>Honest communication, transparent pricing and straightforward contracts with no hidden terms.</p>
+        </div>
+      </div>
+      <div class="val-item">
+        <div class="val-dot">⚡</div>
+        <div>
+          <h4>Responsiveness</h4>
+          <p>Fast response to incidents, requests and changes — because your operations can't wait.</p>
+        </div>
+      </div>
+      <div class="val-item">
+        <div class="val-dot">🏆</div>
+        <div>
+          <h4>Standards</h4>
+          <p>Consistent service levels across every visit, every shift and every site — without compromise.</p>
+        </div>
+      </div>
+      <div class="val-item">
+        <div class="val-dot">🤝</div>
+        <div>
+          <h4>Partnership</h4>
+          <p>We invest in long-term relationships, not one-off contracts. Your success is our benchmark.</p>
+        </div>
+      </div>
+      <div class="val-item">
+        <div class="val-dot">📈</div>
+        <div>
+          <h4>Continuous Improvement</h4>
+          <p>Regular reviews and client feedback drive ongoing refinement of everything we do on your site.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="section theme-soft-blue">
+  <div class="container">
+    <div class="section-heading center-align">
+      <span class="tag-label">Why Choose Us</span>
+      <h2>The advantages of working with a single trusted partner.</h2>
+    </div>
+    <div class="icon-card-grid four-col" style="margin-top:50px;">
+      <div class="icon-card reveal"><div class="icon-bubble">🛡</div><h3>SIA Licensed</h3><p>All relevant security staff hold valid SIA licences and undergo thorough vetting before deployment.</p></div>
+      <div class="icon-card reveal"><div class="icon-bubble">💼</div><h3>Multi-Service</h3><p>Five services under one roof. Simplified procurement, one invoice, one point of contact.</p></div>
+      <div class="icon-card reveal"><div class="icon-bubble">🌍</div><h3>UK-Wide</h3><p>Based in Bury, Lancashire, with the capability to serve clients across England and beyond.</p></div>
+      <div class="icon-card reveal"><div class="icon-bubble">📋</div><h3>Fully Insured</h3><p>Comprehensive insurance coverage across all service divisions gives clients complete peace of mind.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA -->
+
+<section class="cta-section">
+  <div class="cta-bg"></div>
+  <h2>Ready to work<br>with <span>UKDS?</span></h2>
+  <p>Tell us about your site and we'll build the right service package around your needs — with no obligation.</p>
+  <div class="cta-btns">
+    <button class="btn-primary">Request a Quote</button>
+    <button class="btn-outline">View All Services</button>
+  </div>
+</section>
+ 
+
+
+<!-- change here of every page-->
+
+
+   <!-- ===== START: Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.png" alt="UK Defence Services Logo" class="footer-logo" />
+        <p> UK Defence Services Ltd provides professional security, cleaning, IT, and construction 
+          services across England. From manned guarding and CCTV to reliable cleaning, IT solutions, 
+          and on-site support, we keep your business safe, efficient, and professionally maintained.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:03332248175">0333 224 8175</a></li>
+          <li><a href="mailto:enquiries@ukdefenceservices.co.uk">enquiries@ukdefenceservices.co.uk</a></li>
+          <li>Acorn Business Centre, Fountain Street North, Bury, Lancashire, BL9 7AN</li>
+        </ul>
+
+        <a href="contact.html" class="footer-cta">Get Free Quote</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <div class="footer-socials">
+
+<a href="https://www.facebook.com/profile.php?id=61570883460494&locale=en_GB" class="social-chip">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="https://www.instagram.com/uk.defence.services.ltd/" class="social-chip">
+<i class="fa-brands fa-instagram"></i>
+Instagram
+</a>
+
+<a href="https://www.linkedin.com/company/108070191/admin/dashboard/" class="social-chip">
+<i class="fa-brands fa-linkedin-in"></i>
+LinkedIn
+</a>
+
+<!-- ===== <a href="#" class="social-chip">
+<i class="fa-brands fa-youtube"></i>
+YouTube
+</a> ===== -->
+
+
+<a href="https://www.tiktok.com/@uk.defence.services.ltd" class="social-chip">
+<i class="fa-brands fa-tiktok"></i>
+TikTok
+</a>
+<br>
+<!-- =====<a href="#" class="social-chip">
+<i class="fa-brands fa-x-twitter"></i>
+Twitter
+</a> ===== -->
+
+</div>
+
+        
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">UK Defence Services LTD | 
+      Registered in England and Wales, Company No: 16088343,  VAT Registration No : 496 9058 29
+        <br>© 2026 UK Defence Services. All rights reserved.</div>
+  </footer>
+  <!-- ===== END: Footer ===== -->
+
+  <!-- ===== START: Floating CTA Buttons ===== -->
+  <div class="floating-cta-stack">
+    <a href="tel:03332248175" class="float-btn call">📞</a>
+    <a href="https://wa.me/447380738256" class="float-btn whatsapp">💬</a>
+  </div>
+  <!-- ===== END: Floating CTA Buttons ===== -->
+
+
+
+   <!-- cookies-->
+
+ <div id="cookie-banner" class="cookie-banner">
+  
+  <p class="cookie-text">
+    We use cookies to improve your experience.
+    <a href="cookie-policy.html">Learn more</a>
+  </p>
+
+  <div class="cookie-actions">
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="rejectCookies()">Reject</button>
+  </div>
+
+</div>
+
+ <!-- End cookies-->
+  
+  <script src="script.js"></script>
+  <script src="cookie.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
